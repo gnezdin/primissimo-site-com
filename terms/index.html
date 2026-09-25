@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use — Primissimo</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../site.css?v=0c2b09e4">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  document.documentElement.dataset.theme = t;
+})();
+</script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/"><img src="../icon.png" width="28" height="28" alt=""><span>Primissimo</span></a>
+  <button class="theme" type="button" id="theme" aria-label="Switch between light and dark" title="Switch between light and dark" style="margin-inline-start:auto">
+    <svg class="sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3 17 7M7 17l-1.7 1.7"/></g></svg>
+    <svg class="moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.2 14.6A8.4 8.4 0 0 1 9.4 3.8a.7.7 0 0 0-.9-.9 9.8 9.8 0 1 0 12.6 12.6.7.7 0 0 0-.9-.9Z"/></svg>
+  </button>
+</header>
+<main class="legal">
+  <h1>Terms of Use</h1>
+  
+<p><strong>Effective date:</strong> 25 September 2026</p>
+<p>These terms apply to the Primissimo application for iPhone, iPad and Mac and to
+this website. By installing or using the app you agree to them. If you
+download the app from the App Store, Apple's Licensed Application End User
+License Agreement also applies; where the two differ, these terms govern
+what Apple's agreement leaves to the developer.</p>
+<h2>Who we are</h2>
+<p>Primissimo is made and published by an individual developer.
+Contact: nestcaesar@gmail.com.</p>
+<h2>The licence</h2>
+<p>We grant you a personal, non-exclusive, non-transferable licence to install
+and use the app on devices you own or control, for your own musical work,
+in accordance with the rules of the store you obtained it from. You may not
+sell, rent, sublicense, reverse-engineer or redistribute the app, remove its
+notices, or use it to build a competing service by extracting its
+components.</p>
+<p>The app is free of charge. There are no advertisements, accounts,
+subscriptions or in-app purchases today. If a paid tier is introduced in
+the future, it will be described clearly before any purchase, and what is
+free today remains free.</p>
+<h2>Your content</h2>
+<p>Setlists, song notes, recordings, photos, PDF files and annotations you
+create or import are yours. They stay on your device or in the folder you
+choose; the app does not upload them, and we claim no rights over them. You
+are responsible for having the right to use any sheet music, recordings or
+other material you import, and for backing up your files.</p>
+<h2>Third-party formats and trademarks</h2>
+<p>The app can read setlist files in the <code>.slist</code> format produced by the Tempo
+application, and song files in the OnSong and ChordPro formats. Tempo is a
+trademark of Frozen Ape Pte. Ltd.; OnSong is a trademark of OnSong, LLC.
+Primissimo is not affiliated with, endorsed by or supported by either company.
+ChordPro is an open file format. These names are used only to say which files
+the app can open. Other names and trademarks belong to their owners.</p>
+<h2>Feedback</h2>
+<p>Messages you send through the feedback form may be used to improve the app.
+By sending an idea you allow us to use it without obligation or payment.
+How messages are stored is described in the <a href="privacy-policy.en.md">Privacy Policy</a>.</p>
+<h2>No warranty</h2>
+<p>The app is provided "as is". We work hard on timing accuracy and
+reliability, but we do not promise that the app will be free of errors,
+that it will suit every device, audio interface or performance situation,
+or that it will always be available. You use it at your own risk; test it
+in rehearsal before relying on it on stage.</p>
+<h2>Limitation of liability</h2>
+<p>To the extent permitted by law, we are not liable for any indirect,
+incidental or consequential loss, including a missed cue, a lost recording
+or a cancelled performance, arising from use of the app or the website.
+Where liability cannot be excluded, it is limited to the amount you paid
+for the app, which today is nothing.</p>
+<p>Nothing in these terms limits rights that consumer law gives you and that
+cannot be waived.</p>
+<h2>Changes and termination</h2>
+<p>We may update the app and these terms. The current version of the terms is
+always on this page with its effective date; material changes will also be
+mentioned in the app's release notes. You may stop using the app at any
+time by deleting it. We may end the licence if you breach these terms.</p>
+<h2>Governing law</h2>
+<p>These terms are governed by the law of the country in which the publisher
+resides, unless mandatory consumer law of your country provides otherwise.</p>
+  <p><a class="back" href="/">← Primissimo</a></p>
+</main>
+<script>
+document.getElementById('theme').addEventListener('click', function () {
+  var next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem('theme', next); } catch (e) {}
+});
+</script>
+<script src="../visit.js?v=0c2b09e4" data-page="terms" data-endpoint="https://feedback.gnezdin.com/v1/visit" data-fallback="https://feedback.gnezdin.ru:8444/v1/visit" defer></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7cf600b63d94671afa2108161803745"}'></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="zh-Hant" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Primissimo — 精準節拍器、演出曲目單與歌曲筆記</title>
+<meta name="description" content="一款節拍器，穩如磐石的節拍聲、演出曲目單和歌曲筆記盡在一個畫面。BPM 偵測、從 Tempo、試算表和 ChordPro 匯入曲目單、可註記的 PDF 與照片樂譜。iPhone、iPad 和 Mac 免費使用。">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="dark light">
+<meta property="og:title" content="Primissimo — 精準節拍器、演出曲目單與歌曲筆記">
+<meta property="og:description" content="一款節拍器，穩如磐石的節拍聲、演出曲目單和歌曲筆記盡在一個畫面。BPM 偵測、從 Tempo、試算表和 ChordPro 匯入曲目單、可註記的 PDF 與照片樂譜。iPhone、iPad 和 Mac 免費使用。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../og.jpg">
+<link rel="canonical" href="https://primissimo.gnezdin.com/zh-hant/">
+<link rel="alternate" hreflang="en" href="https://primissimo.gnezdin.com/">
+<link rel="alternate" hreflang="en-gb" href="https://primissimo.gnezdin.com/en-gb/">
+<link rel="alternate" hreflang="en-au" href="https://primissimo.gnezdin.com/en-au/">
+<link rel="alternate" hreflang="en-ca" href="https://primissimo.gnezdin.com/en-ca/">
+<link rel="alternate" hreflang="ru" href="https://primissimo.gnezdin.com/ru/">
+<link rel="alternate" hreflang="uk" href="https://primissimo.gnezdin.com/uk/">
+<link rel="alternate" hreflang="de-de" href="https://primissimo.gnezdin.com/de/">
+<link rel="alternate" hreflang="fr-fr" href="https://primissimo.gnezdin.com/fr/">
+<link rel="alternate" hreflang="fr-ca" href="https://primissimo.gnezdin.com/fr-ca/">
+<link rel="alternate" hreflang="es-es" href="https://primissimo.gnezdin.com/es/">
+<link rel="alternate" hreflang="es-mx" href="https://primissimo.gnezdin.com/es-mx/">
+<link rel="alternate" hreflang="it" href="https://primissimo.gnezdin.com/it/">
+<link rel="alternate" hreflang="pt-br" href="https://primissimo.gnezdin.com/pt-br/">
+<link rel="alternate" hreflang="pt-pt" href="https://primissimo.gnezdin.com/pt/">
+<link rel="alternate" hreflang="nl-nl" href="https://primissimo.gnezdin.com/nl/">
+<link rel="alternate" hreflang="sv" href="https://primissimo.gnezdin.com/sv/">
+<link rel="alternate" hreflang="da" href="https://primissimo.gnezdin.com/da/">
+<link rel="alternate" hreflang="no" href="https://primissimo.gnezdin.com/no/">
+<link rel="alternate" hreflang="fi" href="https://primissimo.gnezdin.com/fi/">
+<link rel="alternate" hreflang="pl" href="https://primissimo.gnezdin.com/pl/">
+<link rel="alternate" hreflang="cs" href="https://primissimo.gnezdin.com/cs/">
+<link rel="alternate" hreflang="sk" href="https://primissimo.gnezdin.com/sk/">
+<link rel="alternate" hreflang="sl-si" href="https://primissimo.gnezdin.com/sl/">
+<link rel="alternate" hreflang="hu" href="https://primissimo.gnezdin.com/hu/">
+<link rel="alternate" hreflang="ro" href="https://primissimo.gnezdin.com/ro/">
+<link rel="alternate" hreflang="hr" href="https://primissimo.gnezdin.com/hr/">
+<link rel="alternate" hreflang="el" href="https://primissimo.gnezdin.com/el/">
+<link rel="alternate" hreflang="tr" href="https://primissimo.gnezdin.com/tr/">
+<link rel="alternate" hreflang="ca" href="https://primissimo.gnezdin.com/ca/">
+<link rel="alternate" hreflang="he" href="https://primissimo.gnezdin.com/he/">
+<link rel="alternate" hreflang="ar-sa" href="https://primissimo.gnezdin.com/ar/">
+<link rel="alternate" hreflang="hi" href="https://primissimo.gnezdin.com/hi/">
+<link rel="alternate" hreflang="id" href="https://primissimo.gnezdin.com/id/">
+<link rel="alternate" hreflang="ms" href="https://primissimo.gnezdin.com/ms/">
+<link rel="alternate" hreflang="vi" href="https://primissimo.gnezdin.com/vi/">
+<link rel="alternate" hreflang="th" href="https://primissimo.gnezdin.com/th/">
+<link rel="alternate" hreflang="ja" href="https://primissimo.gnezdin.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://primissimo.gnezdin.com/ko/">
+<link rel="alternate" hreflang="zh-hans" href="https://primissimo.gnezdin.com/zh-hans/">
+<link rel="alternate" hreflang="zh-hant" href="https://primissimo.gnezdin.com/zh-hant/">
+<link rel="alternate" hreflang="x-default" href="https://primissimo.gnezdin.com/">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../site.css?v=0c2b09e4">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  document.documentElement.dataset.theme = t;
+})();
+</script>
+</head>
+<body data-root="no" data-locales="en=/ en-gb=/en-gb/ en-au=/en-au/ en-ca=/en-ca/ ru=/ru/ uk=/uk/ de-de=/de/ fr-fr=/fr/ fr-ca=/fr-ca/ es-es=/es/ es-mx=/es-mx/ it=/it/ pt-br=/pt-br/ pt-pt=/pt/ nl-nl=/nl/ sv=/sv/ da=/da/ no=/no/ fi=/fi/ pl=/pl/ cs=/cs/ sk=/sk/ sl-si=/sl/ hu=/hu/ ro=/ro/ hr=/hr/ el=/el/ tr=/tr/ ca=/ca/ he=/he/ ar-sa=/ar/ hi=/hi/ id=/id/ ms=/ms/ vi=/vi/ th=/th/ ja=/ja/ ko=/ko/ zh-hans=/zh-hans/ zh-hant=/zh-hant/" data-endpoint="https://feedback.gnezdin.com/v1/feedback" data-endpoint-fallback="https://feedback.gnezdin.ru:8444/v1/feedback" data-lang="zh-Hant">
+<a class="skip" href="#main">↓</a>
+
+<header class="top">
+  <a class="brand" href="/zh-hant/" aria-label="Primissimo">
+    <img src="../icon.png" width="28" height="28" alt="">
+    <span>Primissimo</span>
+  </a>
+  <nav class="nav" aria-label="功能">
+    <a href="#features">功能</a>
+    <a href="#faq">常見問題</a>
+    <a href="#feedback">意見回饋</a>
+  </nav>
+  <label class="lang"><span class="sr">語言</span>
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+    <select id="lang"><option value="/">English</option><option value="/en-gb/">English (United Kingdom)</option><option value="/en-au/">English (Australia)</option><option value="/en-ca/">English (Canada)</option><option value="/ru/">русский</option><option value="/uk/">українська</option><option value="/de/">Deutsch</option><option value="/fr/">français</option><option value="/fr-ca/">français (Canada)</option><option value="/es/">español</option><option value="/es-mx/">español (México)</option><option value="/it/">italiano</option><option value="/pt-br/">português (Brasil)</option><option value="/pt/">português (Portugal)</option><option value="/nl/">Nederlands</option><option value="/sv/">svenska</option><option value="/da/">dansk</option><option value="/no/">norsk bokmål</option><option value="/fi/">suomi</option><option value="/pl/">polski</option><option value="/cs/">čeština</option><option value="/sk/">slovenčina</option><option value="/sl/">slovenščina</option><option value="/hu/">magyar</option><option value="/ro/">română</option><option value="/hr/">hrvatski</option><option value="/el/">Ελληνικά</option><option value="/tr/">Türkçe</option><option value="/ca/">català</option><option value="/he/">עברית</option><option value="/ar/">العربية</option><option value="/hi/">हिन्दी</option><option value="/id/">Indonesia</option><option value="/ms/">Melayu</option><option value="/vi/">Tiếng Việt</option><option value="/th/">ไทย</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/zh-hans/">中文 (简体)</option><option value="/zh-hant/" selected>中文 (繁體)</option></select>
+  </label>
+  <button class="theme" type="button" id="theme" aria-label="切換淺色與深色" title="切換淺色與深色">
+    <svg class="sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3 17 7M7 17l-1.7 1.7"/></g></svg>
+    <svg class="moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.2 14.6A8.4 8.4 0 0 1 9.4 3.8a.7.7 0 0 0-.9-.9 9.8 9.8 0 1 0 12.6 12.6.7.7 0 0 0-.9-.9Z"/></svg>
+  </button>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero-copy">
+    <h1>Every song. Every cue. <mark>Right on time.</mark></h1>
+    <p class="lead">穩如磐石的節拍聲、你的曲目單和每首歌的筆記——都在一處，排練室裡如此，舞台上也如此。</p>
+    <div class="downloads">
+  
+  
+  <span class="store-badge soon" aria-disabled="true">
+    <img src="../img/app-store/zh-Hant.svg" alt="在 App Store 下載" height="48">
+    <small>即將推出</small>
+  </span>
+  
+  
+  
+  
+  <span class="btn soon" aria-disabled="true">
+  
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3.500 5.500h17v10.500h-17zM1.500 19h21M12 8v5m0 0-2-2m2 2 2-2"/></svg>
+    <span>下載 Mac 版<small>即將推出</small></span>
+  </span>
+  
+  <span class="btn soon" aria-disabled="true">
+  
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.500 3.300v17.400c0 .6.700 1 1.200.7l14.600-8.700c.500-.3.500-1 0-1.300L5.700 2.600c-.5-.3-1.200.1-1.200.7Z"/></svg>
+    <span>Google Play<small>即將推出</small></span>
+  </span>
+</div>
+    <p class="hero-note">免費 · 沒有廣告 · 不需帳號 · iPhone、iPad 和 Mac</p>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="glow"></div>
+    <div class="phone tilt"><div class="shot"><img class="dark" src="../shots/en-US/iphone/gig-dark.90bf02c0.webp" width="1206" height="2622" alt="" loading="eager" decoding="async"><img class="light" src="../shots/en-US/iphone/gig-light.a4c7f83f.webp" width="1206" height="2622" alt="" loading="eager" decoding="async"></div></div>
+    <div class="phone tilt back"><div class="shot"><img class="dark" src="../shots/en-US/iphone/ink-photo-dark.e1f7feed.webp" width="1206" height="2622" alt="" loading="eager" decoding="async"><img class="light" src="../shots/en-US/iphone/ink-photo-light.06eb9280.webp" width="1206" height="2622" alt="" loading="eager" decoding="async"></div></div>
+  </div>
+</section>
+
+<div class="pulse" aria-hidden="true">
+  <span class="group"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i></span><span class="group"><i style="--n:3"></i><i style="--n:4"></i></span><span class="group"><i style="--n:5"></i><i style="--n:6"></i></span>
+</div>
+
+<section class="promises">
+  <h2>三個承諾</h2>
+  <div class="cards">
+    <article><h3>一眼看全</h3><p>目前的歌曲、它的速度、下一首歌和你的筆記始終可見。在舞台上，沒有多餘的東西分散你的注意力。</p></article>
+    <article><h3>永遠準時</h3><p>負責計時的是繞過使用者介面、直接與音訊輸出溝通的音訊引擎——裝置再忙，也挪不動一拍。</p></article>
+    <article><h3>很快就緒</h3><p>聽一聽就能找到速度，從 Tempo、試算表或 ChordPro 搬來曲目單，所有內容都存在屬於你自己的普通檔案裡。</p></article>
+  </div>
+</section>
+
+<div id="features">
+
+<section class="feature">
+  <div class="copy">
+    <h2>穩如磐石的節拍聲</h2>
+    <p>節拍聲來自專用的音訊引擎，它繞過 App 介面，直接與裝置的音訊輸出溝通。每一拍都被準確放進音訊串流中的位置，因此打開筆記、捲動曲目單或切換歌曲，都不會讓任何一拍移位。</p>
+  </div>
+  <div class="art"><div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/precise-dark.7d91f354.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/precise-light.ee6996ee.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div></div>
+</section>
+
+
+
+
+
+<section class="feature flip">
+  <div class="copy">
+    <h2>任何拍號，任何脈動</h2>
+    <p>10–400 BPM。每小節 1–16 拍，分母為 2、4、8 或 16，速度可按二分音符、四分音符、八分音符或附點四分音符計數。拆分和合併拍子分組——3+2+2、2+2+3 或任何其他分法——指示器都會跟著分組走。每一拍可以設為五個等級之一，從強拍到靜音。細分可到十六分音符和六連音，含 Shuffle，六種節拍聲音色，以及能顯示你每次敲擊圖表的 Tap 測速。</p>
+  </div>
+  <div class="art"><div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/edit-dark.3c0e10dd.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/edit-light.3a54a214.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div></div>
+</section>
+
+<section class="feature">
+  <div class="copy">
+    <h2>為每場演出準備曲目單</h2>
+    <p>曲目單想建多少就建多少——每個樂團、每場演出各一份。依標題搜尋歌曲，拖曳調整順序，並在不停止節拍聲的情況下切換歌曲：新歌從第一拍開始。速度和拍號在獨立的編輯畫面裡修改，主畫面始終保持清爽。</p>
+  </div>
+  <div class="art pair">
+    <div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/tracks-dark.0eafae5f.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/tracks-light.465d1207.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/library-dark.f32616eb.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/library-light.16f9935d.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+  </div>
+</section>
+
+<section class="wide">
+  <h2>一份曲目單，所有裝置通用</h2>
+  <p class="lead">在 Mac 上編排曲目單，在譜架上的 iPad 上排練，用 iPhone 完成演出。資料庫放在 iCloud 雲碟時，每台裝置打開的都是同樣的檔案。</p>
+  <div class="desk">
+    <div class="window"><span class="bar"><i></i><i></i><i></i></span><div class="shot"><img class="dark" src="../shots/en-US/mac/gig-dark.6e56e40c.webp" width="2000" height="1220" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/mac/gig-light.31aa295b.webp" width="2000" height="1220" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="tablet"><div class="shot"><img class="dark" src="../shots/en-US/ipad/chart-dark.af61eb07.webp" width="1668" height="2388" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/ipad/chart-light.d4a78788.webp" width="1668" height="2388" alt="" loading="lazy" decoding="async"></div></div>
+  </div>
+</section>
+
+<section class="wide">
+  <h2>各種形式的筆記——文字、照片、PDF、音訊</h2>
+  <p class="lead">把曲式、提示和難點放在節拍聲旁邊：有格式的文字、PDF 樂譜、樂譜照片，以及帶命名標記的音訊。循環播放某一段或放慢速度來練習。用麥克風錄下靈感。在任何 PDF 或照片上用筆、螢光筆和音樂印章做註記——原始檔案維持不變，還可以把附註記的副本輸出為 PDF 或 PNG。</p>
+  <div class="gallery">
+    <div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/notes-dark.21863120.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/notes-light.34a78a20.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/chart-dark.9a29c8b8.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/chart-light.68e6da03.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/ink-dark.ad4b186b.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/ink-light.f62fdde8.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/ink-photo-dark.e1f7feed.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/ink-photo-light.06eb9280.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+  </div>
+</section>
+
+<section class="feature flip">
+  <div class="copy">
+    <h2>讓它聽一聽，速度就出來了</h2>
+    <p>不知道 BPM？選一個音訊檔，或讓 Primissimo 透過麥克風聽——聽錄音，或聽房間裡正在演奏的樂團。追蹤節拍的神經網路直接在你的裝置上找出速度，音訊從不離開裝置。輕點一下即可把結果減半或加倍。如果音樂沒有穩定的脈動，App 會直接告訴你，而不是亂猜。</p>
+  </div>
+  <div class="art"><div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/detect-dark.dfecca8e.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/detect-light.b5f1fd9e.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div></div>
+</section>
+
+<section class="feature">
+  <div class="copy">
+    <h2>你的曲目單，你的檔案。</h2>
+    <p>曲目單是普通的 Markdown 檔案，而不是鎖在資料庫裡的紀錄。可以在 App 中編輯，也可以用任何儲存純文字的編輯器編輯——Word 或 Pages 這類文書處理軟體可能會損壞檔案。把資料庫資料夾放進 iCloud 雲碟，iPhone、iPad 和 Mac 上就是同樣的曲目單。</p>
+  </div>
+  <div class="art"><pre class="file" dir="ltr"><code>---
+schema: primissimo-setlist/1
+title: Friday Night — Blue Room
+---
+
+## Uneven Ground
+
+- **bpm:** 132
+- **meter:** 7/8
+- **grouping:** 3+2+2
+- **accents:** `&gt;..&gt;.&gt;.`
+
+Count it **3+2+2**. Ride on the groups.
+
+![Drum part](Friday Night/copper.pdf)
+</code></pre></div>
+</section>
+
+<section class="feature flip">
+  <div class="copy">
+    <h2>從 Tempo、試算表和 ChordPro 匯入曲目單</h2>
+    <p>打開 Tempo 曲目單（.slist）、試算表（.csv、.tsv），或 ChordPro 和 OnSong 歌曲檔（.cho、.chopro、.chordpro、.crd、.pro、.onsong），匯入前逐首檢查。從 Tempo 會搬移 BPM、拍號、重音、節奏型和靜音拍；從歌本匯入時，歌詞和和弦會放進歌曲筆記。無法搬移的內容會在匯入前列出，而不是在舞台上才發現。</p>
+  </div>
+  <div class="art"><div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/import-dark.a4a89786.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/import-light.fc0179e8.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div></div>
+</section>
+
+<section class="feature">
+  <div class="copy">
+    <h2>淺色適合書桌，深色適合舞台。</h2>
+    <p>每套主題都單獨設計，而不是簡單地反轉顏色。試試角落的開關——截圖會隨頁面一起切換。</p>
+  </div>
+  <div class="art duo">
+    <div class="phone light-only"><div class="shot"><img class="dark" src="../shots/en-US/iphone/gig-dark.90bf02c0.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/gig-light.a4c7f83f.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="phone dark-only"><div class="shot"><img class="dark" src="../shots/en-US/iphone/gig-dark.90bf02c0.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/gig-light.a4c7f83f.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+  </div>
+</section>
+
+<section class="wide">
+  <h2>說你的語言</h2>
+  <p class="lead">40 種介面語言，包括由右至左書寫的文字。</p>
+  <ul class="langs" dir="ltr"><li>azərbaycan</li><li>català</li><li>dansk</li><li>Deutsch</li><li>English</li><li>español</li><li>français</li><li>hrvatski</li><li>Indonesia</li><li>italiano</li><li>magyar</li><li>Melayu</li><li>Nederlands</li><li>norsk bokmål</li><li>polski</li><li>português</li><li>română</li><li>slovenčina</li><li>slovenščina</li><li>suomi</li><li>svenska</li><li>Tiếng Việt</li><li>Türkçe</li><li>čeština</li><li>Ελληνικά</li><li>беларуская</li><li>български</li><li>русский</li><li>српски</li><li>українська</li><li>қазақ тілі</li><li>հայերեն</li><li>עברית</li><li>العربية</li><li>हिन्दी</li><li>ไทย</li><li>ქართული</li><li>中文</li><li>日本語</li><li>한국어</li></ul>
+</section>
+
+<section class="wide free">
+  <h2>所有功能，全部免費</h2>
+  <p class="lead">沒有廣告、沒有帳號、沒有訂閱、沒有試用期——這裡介紹的一切都不必付費即可使用。匿名使用統計不含任何識別碼，可在設定中關閉。</p>
+  <ul class="ticks"><li>淺色與深色主題</li><li>不必連網即可使用</li><li>iPhone、iPad 和 Mac</li><li>App 內意見回饋直達開發者</li></ul>
+  <div class="downloads">
+  
+  
+  <span class="store-badge soon" aria-disabled="true">
+    <img src="../img/app-store/zh-Hant.svg" alt="在 App Store 下載" height="48">
+    <small>即將推出</small>
+  </span>
+  
+  
+  
+  
+  <span class="btn soon" aria-disabled="true">
+  
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3.500 5.500h17v10.500h-17zM1.500 19h21M12 8v5m0 0-2-2m2 2 2-2"/></svg>
+    <span>下載 Mac 版<small>即將推出</small></span>
+  </span>
+  
+  <span class="btn soon" aria-disabled="true">
+  
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.500 3.300v17.400c0 .6.700 1 1.200.7l14.600-8.700c.500-.3.500-1 0-1.300L5.700 2.600c-.5-.3-1.200.1-1.200.7Z"/></svg>
+    <span>Google Play<small>即將推出</small></span>
+  </span>
+</div>
+</section>
+
+</div>
+
+<section class="wide video" id="video">
+  <h2>看看實際效果</h2>
+  <p class="lead">一段簡短的示範：節拍聲、曲目單和筆記。</p>
+  
+  
+  <div class="player" id="player" data-embed="https://www.youtube-nocookie.com/embed/D-dM4VeEoVg">
+    <video controls playsinline preload="metadata" poster="../video/poster.jpg?v=0160508f39" width="1280" height="720">
+      <source src="../video/primissimo-overview-web-720p.mp4?v=b871cdd2fc" type="video/mp4">
+    </video>
+  </div>
+  <p class="video-note"><a href="https://www.youtube.com/watch?v=D-dM4VeEoVg" rel="noopener">在 YouTube 上觀看</a></p>
+  
+</section>
+
+<section class="faq" id="faq">
+  <h2>常見問題</h2>
+  
+  <details open><summary>Primissimo 真的免費嗎？</summary><p>是的。沒有廣告、帳號、訂閱或時間限制，App 內也不販售任何東西。以後可能會推出附新功能的付費擴充。我們不打算收回任何今天免費的功能。</p></details>
+  
+  <details><summary>節拍聲為什麼更精準？</summary><p>在許多節拍器 App 裡，負責打拍的正是更新螢幕的同一個計時器。裝置忙於其他 App 時，這個計時器可能延遲，節拍聲就會踉蹌。在 Primissimo 中，每一聲都由繞過使用者介面、直接與音訊輸出溝通的引擎放進音訊串流，所以裝置再忙也不會讓任何一拍偏離時間。</p></details>
+  
+  <details><summary>沒有網路能用嗎？</summary><p>可以，完全可以。速度偵測同樣在裝置上執行，你的音訊從不上傳。只有傳送意見回饋和可選的使用統計需要連網。</p></details>
+  
+  <details><summary>我的曲目單存在哪裡？</summary><p>儲存在 Markdown 檔案裡。可以放在 App 內，也可以選擇一個資料夾——例如 iCloud 雲碟：這樣曲目單會在裝置間同步，刪除 App 後也還在。任何文字編輯器都能打開它們，但只應在處理純文字的編輯器裡儲存修改：Word 或 Pages 這類文書處理軟體可能會損壞檔案。</p></details>
+  
+  <details><summary>可以從 Tempo 搬移我的曲目單嗎？</summary><p>可以。打開 .slist 檔，逐首檢查預覽後匯入。BPM、拍號、重音、節奏型和靜音拍都會搬移，無法搬移的內容會在確認前列出。</p></details>
+  
+  <details><summary>可以匯入試算表或 ChordPro 歌曲嗎？</summary><p>可以。另存為 CSV 的試算表需要有一欄歌曲名稱；BPM 和拍號欄也會讀取，演出者、調性、長度和筆記會放進歌曲筆記。ChordPro 和 OnSong 檔會帶來速度、拍號、歌詞和和弦。要用多個歌曲檔組成一個曲目單，請在匯入視窗中一次全部選取，歌曲會依檔名順序排列。</p></details>
+  
+  <details><summary>App 會收集哪些資料？</summary><p>不含任何識別碼的匿名使用統計（可在設定中關閉），以及你主動送出的意見回饋。沒有帳號，也沒有廣告追蹤。</p></details>
+  
+  <details><summary>有 Android 版嗎？</summary><p>已在計畫中。準備就緒後，Google Play 按鈕就會生效。</p></details>
+  
+  <details><summary>支援藍牙踏板嗎？</summary><p>有鍵盤快速鍵，但踏板尚未測試，所以我們不作承諾。請透過下面的表單告訴我們你用的是哪款踏板。</p></details>
+  
+</section>
+
+<section class="feedback" id="feedback">
+  <h2>告訴開發者</h2>
+  <p class="lead">問題、想法、故障——每一則訊息都由寫程式的人親自閱讀。</p>
+  <form id="form" novalidate>
+    <fieldset class="kinds">
+      <legend>主題</legend>
+      <label><input type="radio" name="kind" value="idea" checked><span>想法</span></label>
+      <label><input type="radio" name="kind" value="bug"><span>問題</span></label>
+      <label><input type="radio" name="kind" value="other"><span>疑問</span></label>
+    </fieldset>
+    <label class="field"><span>訊息</span><textarea name="message" rows="6" maxlength="4000" required></textarea></label>
+    <label class="field"><span>用於回覆的電子郵件（選填）</span><input type="email" name="email" maxlength="200" autocomplete="email"></label>
+    <label class="trap" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    <div class="send">
+      <button type="submit">送出</button>
+      <p class="status" id="status" role="status" data-sent="謝謝，你的訊息已送達。" data-error="訊息傳送失敗，請稍後再試。" data-short="請再多寫一點。"></p>
+    </div>
+  </form>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-row">
+    <a href="/privacy/">隱私權政策</a>
+    <a href="/terms/">使用條款</a>
+    <a href="mailto:nestcaesar@gmail.com">聯絡方式</a>
+  </div>
+  <p class="small">© 2026 Primissimo</p>
+  <p class="small">Tempo 是 Frozen Ape Pte. Ltd. 的商標，OnSong 是 OnSong, LLC 的商標。Primissimo 與上述公司均沒有任何關聯，也未獲其認可。</p>
+  <p class="small tags" dir="ltr">#節拍器 #鼓手 #爵士鼓 #演出曲目單 #排練 #演出 #bpm #節拍聲 #複雜拍號 #樂譜</p>
+</footer>
+
+<script src="../site.js?v=0c2b09e4" defer></script>
+<script src="../visit.js?v=0c2b09e4" data-page="home" data-endpoint="https://feedback.gnezdin.com/v1/visit" data-fallback="https://feedback.gnezdin.ru:8444/v1/visit" defer></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7cf600b63d94671afa2108161803745"}'></script>
+
+</body>
+</html>
