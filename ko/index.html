@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Primissimo — 세트리스트, 곡 메모, 정확한 메트로놈</title>
+<meta name="description" content="세트리스트와 곡 메모를 한 화면에 — 클릭이 흔들리지 않는 메트로놈과 함께. BPM 감지, Tempo·스프레드시트·ChordPro에서 세트리스트 가져오기, 필기할 수 있는 PDF와 사진 악보. iPhone, iPad, Mac에서 무료.">
+
+<meta name="color-scheme" content="dark light">
+<meta property="og:title" content="Primissimo — 세트리스트, 곡 메모, 정확한 메트로놈">
+<meta property="og:description" content="세트리스트와 곡 메모를 한 화면에 — 클릭이 흔들리지 않는 메트로놈과 함께. BPM 감지, Tempo·스프레드시트·ChordPro에서 세트리스트 가져오기, 필기할 수 있는 PDF와 사진 악보. iPhone, iPad, Mac에서 무료.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../og.jpg">
+<link rel="canonical" href="https://primissimo.gnezdin.com/ko/">
+<link rel="alternate" hreflang="en" href="https://primissimo.gnezdin.com/">
+<link rel="alternate" hreflang="en-gb" href="https://primissimo.gnezdin.com/en-gb/">
+<link rel="alternate" hreflang="en-au" href="https://primissimo.gnezdin.com/en-au/">
+<link rel="alternate" hreflang="en-ca" href="https://primissimo.gnezdin.com/en-ca/">
+<link rel="alternate" hreflang="ru" href="https://primissimo.gnezdin.com/ru/">
+<link rel="alternate" hreflang="uk" href="https://primissimo.gnezdin.com/uk/">
+<link rel="alternate" hreflang="de-de" href="https://primissimo.gnezdin.com/de/">
+<link rel="alternate" hreflang="fr-fr" href="https://primissimo.gnezdin.com/fr/">
+<link rel="alternate" hreflang="fr-ca" href="https://primissimo.gnezdin.com/fr-ca/">
+<link rel="alternate" hreflang="es-es" href="https://primissimo.gnezdin.com/es/">
+<link rel="alternate" hreflang="es-mx" href="https://primissimo.gnezdin.com/es-mx/">
+<link rel="alternate" hreflang="it" href="https://primissimo.gnezdin.com/it/">
+<link rel="alternate" hreflang="pt-br" href="https://primissimo.gnezdin.com/pt-br/">
+<link rel="alternate" hreflang="pt-pt" href="https://primissimo.gnezdin.com/pt/">
+<link rel="alternate" hreflang="nl-nl" href="https://primissimo.gnezdin.com/nl/">
+<link rel="alternate" hreflang="sv" href="https://primissimo.gnezdin.com/sv/">
+<link rel="alternate" hreflang="da" href="https://primissimo.gnezdin.com/da/">
+<link rel="alternate" hreflang="no" href="https://primissimo.gnezdin.com/no/">
+<link rel="alternate" hreflang="fi" href="https://primissimo.gnezdin.com/fi/">
+<link rel="alternate" hreflang="pl" href="https://primissimo.gnezdin.com/pl/">
+<link rel="alternate" hreflang="cs" href="https://primissimo.gnezdin.com/cs/">
+<link rel="alternate" hreflang="sk" href="https://primissimo.gnezdin.com/sk/">
+<link rel="alternate" hreflang="sl-si" href="https://primissimo.gnezdin.com/sl/">
+<link rel="alternate" hreflang="hu" href="https://primissimo.gnezdin.com/hu/">
+<link rel="alternate" hreflang="ro" href="https://primissimo.gnezdin.com/ro/">
+<link rel="alternate" hreflang="hr" href="https://primissimo.gnezdin.com/hr/">
+<link rel="alternate" hreflang="el" href="https://primissimo.gnezdin.com/el/">
+<link rel="alternate" hreflang="tr" href="https://primissimo.gnezdin.com/tr/">
+<link rel="alternate" hreflang="ca" href="https://primissimo.gnezdin.com/ca/">
+<link rel="alternate" hreflang="he" href="https://primissimo.gnezdin.com/he/">
+<link rel="alternate" hreflang="ar-sa" href="https://primissimo.gnezdin.com/ar/">
+<link rel="alternate" hreflang="hi" href="https://primissimo.gnezdin.com/hi/">
+<link rel="alternate" hreflang="id" href="https://primissimo.gnezdin.com/id/">
+<link rel="alternate" hreflang="ms" href="https://primissimo.gnezdin.com/ms/">
+<link rel="alternate" hreflang="vi" href="https://primissimo.gnezdin.com/vi/">
+<link rel="alternate" hreflang="th" href="https://primissimo.gnezdin.com/th/">
+<link rel="alternate" hreflang="ja" href="https://primissimo.gnezdin.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://primissimo.gnezdin.com/ko/">
+<link rel="alternate" hreflang="zh-hans" href="https://primissimo.gnezdin.com/zh-hans/">
+<link rel="alternate" hreflang="zh-hant" href="https://primissimo.gnezdin.com/zh-hant/">
+<link rel="alternate" hreflang="x-default" href="https://primissimo.gnezdin.com/">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../site.css?v=dd984700">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  document.documentElement.dataset.theme = t;
+})();
+</script>
+</head>
+<body data-root="no" data-locales="en=/ en-gb=/en-gb/ en-au=/en-au/ en-ca=/en-ca/ ru=/ru/ uk=/uk/ de-de=/de/ fr-fr=/fr/ fr-ca=/fr-ca/ es-es=/es/ es-mx=/es-mx/ it=/it/ pt-br=/pt-br/ pt-pt=/pt/ nl-nl=/nl/ sv=/sv/ da=/da/ no=/no/ fi=/fi/ pl=/pl/ cs=/cs/ sk=/sk/ sl-si=/sl/ hu=/hu/ ro=/ro/ hr=/hr/ el=/el/ tr=/tr/ ca=/ca/ he=/he/ ar-sa=/ar/ hi=/hi/ id=/id/ ms=/ms/ vi=/vi/ th=/th/ ja=/ja/ ko=/ko/ zh-hans=/zh-hans/ zh-hant=/zh-hant/" data-endpoint="https://feedback.gnezdin.com/v1/feedback" data-endpoint-fallback="https://feedback.gnezdin.ru:8444/v1/feedback" data-lang="ko">
+<a class="skip" href="#main">↓</a>
+
+<header class="top">
+  <a class="brand" href="/ko/" aria-label="Primissimo">
+    <img src="../icon.png" width="28" height="28" alt="">
+    <span>Primissimo</span>
+  </a>
+  <nav class="nav" aria-label="기능">
+    <a href="#features">기능</a>
+    <a href="#faq">질문</a>
+    <a href="#feedback">피드백</a>
+  </nav>
+  <label class="lang"><span class="sr">언어</span>
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+    <select id="lang"><option value="/">English</option><option value="/en-gb/">English (United Kingdom)</option><option value="/en-au/">English (Australia)</option><option value="/en-ca/">English (Canada)</option><option value="/ru/">русский</option><option value="/uk/">українська</option><option value="/de/">Deutsch</option><option value="/fr/">français</option><option value="/fr-ca/">français (Canada)</option><option value="/es/">español</option><option value="/es-mx/">español (México)</option><option value="/it/">italiano</option><option value="/pt-br/">português (Brasil)</option><option value="/pt/">português (Portugal)</option><option value="/nl/">Nederlands</option><option value="/sv/">svenska</option><option value="/da/">dansk</option><option value="/no/">norsk bokmål</option><option value="/fi/">suomi</option><option value="/pl/">polski</option><option value="/cs/">čeština</option><option value="/sk/">slovenčina</option><option value="/sl/">slovenščina</option><option value="/hu/">magyar</option><option value="/ro/">română</option><option value="/hr/">hrvatski</option><option value="/el/">Ελληνικά</option><option value="/tr/">Türkçe</option><option value="/ca/">català</option><option value="/he/">עברית</option><option value="/ar/">العربية</option><option value="/hi/">हिन्दी</option><option value="/id/">Indonesia</option><option value="/ms/">Melayu</option><option value="/vi/">Tiếng Việt</option><option value="/th/">ไทย</option><option value="/ja/">日本語</option><option value="/ko/" selected>한국어</option><option value="/zh-hans/">中文 (简体)</option><option value="/zh-hant/">中文 (繁體)</option></select>
+  </label>
+  <button class="theme" type="button" id="theme" aria-label="라이트와 다크 전환" title="라이트와 다크 전환">
+    <svg class="sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3 17 7M7 17l-1.7 1.7"/></g></svg>
+    <svg class="moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.2 14.6A8.4 8.4 0 0 1 9.4 3.8a.7.7 0 0 0-.9-.9 9.8 9.8 0 1 0 12.6 12.6.7.7 0 0 0-.9-.9Z"/></svg>
+  </button>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero-copy">
+    <h1>첫 음부터 <mark>앙코르까지.</mark></h1>
+    <p class="lead">세트리스트, 곡마다의 메모, 흔들림 없는 클릭을 한곳에. 합주실에서도, 무대에서도.</p>
+    <div class="downloads">
+  
+  
+  
+  <span class="store-badge soon" aria-disabled="true">
+    <img src="../img/app-store/ko.svg" alt="App Store에서 다운로드" height="48">
+    <small>출시 예정</small>
+  </span>
+  
+  
+  
+  <span class="store-badge soon" aria-disabled="true">
+    <img src="../img/mac-app-store/ko.svg" alt="Mac App Store" height="48">
+    <small>출시 예정</small>
+  </span>
+  
+  
+  <span class="btn soon" aria-disabled="true">
+  
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3.500 5.500h17v10.500h-17zM1.500 19h21M12 8v5m0 0-2-2m2 2 2-2"/></svg>
+    <span>Mac용 다운로드<small>출시 예정</small></span>
+  </span>
+  
+  <span class="btn soon" aria-disabled="true">
+  
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.500 3.300v17.400c0 .6.700 1 1.200.7l14.600-8.700c.500-.3.500-1 0-1.300L5.700 2.600c-.5-.3-1.200.1-1.200.7Z"/></svg>
+    <span>Google Play<small>출시 예정</small></span>
+  </span>
+</div>
+    <p class="hero-note">무료 · 광고 없음 · 계정 없음 · iPhone, iPad, Mac</p>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="glow"></div>
+    <div class="phone tilt"><div class="shot"><img class="dark" src="../shots/en-US/iphone/gig-dark.90bf02c0.webp" width="1206" height="2622" alt="" loading="eager" decoding="async"><img class="light" src="../shots/en-US/iphone/gig-light.a4c7f83f.webp" width="1206" height="2622" alt="" loading="eager" decoding="async"></div></div>
+    <div class="phone tilt back"><div class="shot"><img class="dark" src="../shots/en-US/iphone/ink-photo-dark.e1f7feed.webp" width="1206" height="2622" alt="" loading="eager" decoding="async"><img class="light" src="../shots/en-US/iphone/ink-photo-light.06eb9280.webp" width="1206" height="2622" alt="" loading="eager" decoding="async"></div></div>
+  </div>
+</section>
+
+<div class="pulse" aria-hidden="true">
+  <span class="group"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i></span><span class="group"><i style="--n:3"></i><i style="--n:4"></i></span><span class="group"><i style="--n:5"></i><i style="--n:6"></i></span>
+</div>
+
+<section class="promises">
+  <h2>세 가지 약속</h2>
+  <div class="cards">
+    <article><h3>한눈에 모두</h3><p>지금 곡, 그 템포, 다음 곡, 내 메모가 늘 보입니다. 무대에서는 불필요한 것이 주의를 흩트리지 않습니다.</p></article>
+    <article><h3>금세 준비 완료</h3><p>들려주기만 하면 템포를 찾고, Tempo나 스프레드시트, ChordPro에서 세트리스트를 옮겨 오고, 모든 것을 내 것인 Markdown 파일에 보관하세요.</p></article>
+    <article><h3>언제나 제때</h3><p>시간은 사용자 인터페이스를 거치지 않고 오디오 출력과 직접 작동하는 오디오 엔진이 지킵니다. 기기가 바빠도 박이 밀리지 않습니다.</p></article>
+  </div>
+</section>
+
+<div id="features">
+
+<section class="feature">
+  <div class="copy">
+    <h2>모든 공연을 위한 세트리스트</h2>
+    <p>세트리스트는 필요한 만큼. 밴드마다, 공연마다 하나씩 만드세요. 제목으로 곡을 찾고, 끌어서 순서를 정하고, 클릭을 멈추지 않고 곡을 바꿀 수 있습니다. 새 곡은 첫 박부터 시작합니다. 템포와 박자는 별도의 편집 화면에서 바꾸므로 메인 화면은 깔끔하게 유지됩니다.</p>
+  </div>
+  <div class="art pair">
+    <div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/tracks-dark.0eafae5f.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/tracks-light.465d1207.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/library-dark.f32616eb.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/library-light.16f9935d.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+  </div>
+</section>
+
+<section class="wide">
+  <h2>온갖 종류의 메모 — 텍스트, 사진, PDF, 오디오</h2>
+  <p class="lead">곡의 구성, 신호, 어려운 부분을 클릭 옆에 두세요. 서식 있는 텍스트, PDF 악보, 악보 사진, 이름 붙인 마커가 있는 오디오. 구간을 반복하거나 느리게 해서 연습할 수 있습니다. 아이디어는 마이크로 녹음하세요. PDF나 사진에 펜, 형광펜, 음악 스탬프로 필기할 수 있으며, 원본 파일은 그대로 두고 필기한 사본을 PDF나 PNG로 내보낼 수 있습니다.</p>
+  <div class="gallery">
+    <div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/notes-dark.21863120.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/notes-light.34a78a20.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/chart-dark.9a29c8b8.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/chart-light.68e6da03.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/ink-dark.ad4b186b.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/ink-light.f62fdde8.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/ink-photo-dark.e1f7feed.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/ink-photo-light.06eb9280.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+  </div>
+</section>
+
+<section class="wide">
+  <h2>모든 기기에서 하나의 세트</h2>
+  <p class="lead">Mac에서 세트리스트를 짜고, 보면대의 iPad로 합주하고, iPhone으로 공연하세요. 라이브러리가 iCloud Drive에 있으면 모든 기기가 같은 파일을 엽니다. 동기화는 Primissimo에서 가장 새로운 부분입니다. 이상한 점이 있으면 설정의 &#39;의견 보내기&#39;로 알려 주세요.</p>
+  <div class="desk">
+    <div class="window"><span class="bar"><i></i><i></i><i></i></span><div class="shot"><img class="dark" src="../shots/en-US/mac/gig-dark.6e56e40c.webp" width="2000" height="1220" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/mac/gig-light.31aa295b.webp" width="2000" height="1220" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="tablet"><div class="shot"><img class="dark" src="../shots/en-US/ipad/chart-dark.af61eb07.webp" width="1668" height="2388" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/ipad/chart-light.d4a78788.webp" width="1668" height="2388" alt="" loading="lazy" decoding="async"></div></div>
+  </div>
+</section>
+
+<section class="feature flip">
+  <div class="copy">
+    <h2>당신의 세트리스트. 당신의 파일.</h2>
+    <p>세트리스트는 데이터베이스에 갇힌 레코드가 아니라 직접 고른 폴더에 있는 Markdown 파일입니다. 어떤 텍스트 편집기로도 열 수 있지만, 편집은 앱에서 하세요. 폴더를 iCloud Drive에 두면 iPhone, iPad, Mac에서 같은 세트리스트를 쓸 수 있습니다. 모든 기기의 편집 내용은 오프라인에서 한 것까지 하나로 합쳐집니다. 두 기기에서 같은 부분을 바꿨다면 두 버전을 모두 남겨 두고 직접 고를 수 있습니다. 연주 중에는 열려 있는 세트리스트가 바뀌지 않으며, 새 변경 사항은 “적용”을 누를 때까지 기다립니다.</p>
+  </div>
+  <div class="art"><pre class="file" dir="ltr"><code>---
+schema: primissimo-setlist/2
+title: Friday Night — Blue Room
+---
+
+# Friday Night — Blue Room
+
+## Uneven Ground
+
+- **bpm:** 132
+- **meter:** 7/8
+- **grouping:** 3+2+2
+- **accents:** `&gt;..&gt;.&gt;.`
+
+Count it **3+2+2**. Ride on the groups.
+
+![Drum part](Friday Night/copper.pdf)
+</code></pre></div>
+</section>
+
+<section class="feature">
+  <div class="copy">
+    <h2>Tempo, 스프레드시트, ChordPro에서 세트리스트 가져오기</h2>
+    <p>Tempo 세트리스트(.slist), 스프레드시트(.csv, .tsv), ChordPro 및 OnSong 곡 파일(.cho, .chopro, .chordpro, .crd, .pro, .onsong)을 열고 가져오기 전에 곡마다 확인하세요. Tempo에서는 BPM, 박자표, 강세, 리듬 패턴, 무음 박이 옮겨지고, 송북에서는 가사와 코드가 곡 메모에 들어갑니다. 옮길 수 없는 것은 가져오기 전에 보여 주므로 무대에서 알게 될 일이 없습니다.</p>
+  </div>
+  <div class="art"><div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/import-dark.a4a89786.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/import-light.fc0179e8.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div></div>
+</section>
+
+
+<section class="feature flip">
+  <div class="copy">
+    <h2>흔들림 없는 클릭</h2>
+    <p>클릭은 앱 화면을 거치지 않고 기기의 오디오 출력과 직접 작동하는 전용 오디오 엔진에서 나옵니다. 모든 박을 오디오 스트림 속 정확한 자리에 놓기 때문에, 메모를 열거나 세트리스트를 스크롤하거나 곡을 바꿔도 박이 밀리지 않습니다.</p>
+  </div>
+  <div class="art"><div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/precise-dark.7d91f354.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/precise-light.ee6996ee.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div></div>
+</section>
+
+
+
+
+<section class="feature">
+  <div class="copy">
+    <h2>어떤 박자든. 어떤 펄스든.</h2>
+    <p>10~400 BPM. 마디당 1~16박, 분모는 2, 4, 8, 16이며 템포는 2분음표, 4분음표, 8분음표, 점4분음표 중 무엇으로 셀지 고를 수 있습니다. 박 그룹을 나누고 합치면(3+2+2, 2+2+3, 어떤 방식이든) 표시기가 그대로 따라갑니다. 각 박에 강박부터 무음까지 다섯 단계 중 하나를 지정하세요. 16분음표와 6연음까지의 세분화, 셔플 포함, 여섯 가지 클릭 소리, 탭 기록을 그래프로 보여 주는 탭 템포.</p>
+  </div>
+  <div class="art"><div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/edit-dark.3c0e10dd.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/edit-light.3a54a214.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div></div>
+</section>
+
+<section class="feature flip">
+  <div class="copy">
+    <h2>들려주면 템포를 찾아냅니다.</h2>
+    <p>BPM을 모르세요? 오디오 파일을 고르거나 Primissimo가 마이크로 듣게 하세요. 녹음이든 연습실의 밴드든 괜찮습니다. 박을 따라가는 신경망이 기기 안에서 바로 템포를 찾아내며, 오디오는 기기 밖으로 나가지 않습니다. 탭 한 번으로 결과를 절반이나 두 배로 바꿀 수 있습니다. 음악에 일정한 펄스가 없으면 추측하는 대신 그렇다고 알려 줍니다.</p>
+  </div>
+  <div class="art"><div class="phone"><div class="shot"><img class="dark" src="../shots/en-US/iphone/detect-dark.dfecca8e.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/detect-light.b5f1fd9e.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div></div>
+</section>
+
+<section class="feature">
+  <div class="copy">
+    <h2>책상에는 라이트. 무대에는 다크.</h2>
+    <p>두 테마는 색을 뒤집기만 한 것이 아니라 각각 따로 디자인했습니다. 이 페이지 모서리의 스위치를 눌러 보세요. 화면도 페이지와 함께 바뀝니다.</p>
+  </div>
+  <div class="art duo">
+    <div class="phone light-only"><div class="shot"><img class="dark" src="../shots/en-US/iphone/gig-dark.90bf02c0.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/gig-light.a4c7f83f.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+    <div class="phone dark-only"><div class="shot"><img class="dark" src="../shots/en-US/iphone/gig-dark.90bf02c0.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/iphone/gig-light.a4c7f83f.webp" width="1206" height="2622" alt="" loading="lazy" decoding="async"></div></div>
+  </div>
+</section>
+
+<section class="wide">
+  <h2>내 언어로</h2>
+  <p class="lead">오른쪽에서 왼쪽으로 쓰는 문자를 포함한 40개 인터페이스 언어.</p>
+  <ul class="langs" dir="ltr"><li>azərbaycan</li><li>català</li><li>dansk</li><li>Deutsch</li><li>English</li><li>español</li><li>français</li><li>hrvatski</li><li>Indonesia</li><li>italiano</li><li>magyar</li><li>Melayu</li><li>Nederlands</li><li>norsk bokmål</li><li>polski</li><li>português</li><li>română</li><li>slovenčina</li><li>slovenščina</li><li>suomi</li><li>svenska</li><li>Tiếng Việt</li><li>Türkçe</li><li>čeština</li><li>Ελληνικά</li><li>беларуская</li><li>български</li><li>русский</li><li>српски</li><li>українська</li><li>қазақ тілі</li><li>հայերեն</li><li>עברית</li><li>العربية</li><li>हिन्दी</li><li>ไทย</li><li>ქართული</li><li>中文</li><li>日本語</li><li>한국어</li></ul>
+</section>
+
+<section class="wide free">
+  <h2>모든 기능이 무료</h2>
+  <p class="lead">광고, 계정, 구독, 체험 기간이 모두 없습니다. 여기 소개한 모든 것이 결제 없이 작동합니다. 익명 사용 통계에는 어떤 식별자도 없으며 설정에서 끌 수 있습니다.</p>
+  <ul class="ticks"><li>라이트 및 다크 테마</li><li>인터넷 없이 작동</li><li>iPhone, iPad, Mac</li><li>앱에서 보낸 피드백은 개발자에게 바로 전달</li></ul>
+  <div class="downloads">
+  
+  
+  
+  <span class="store-badge soon" aria-disabled="true">
+    <img src="../img/app-store/ko.svg" alt="App Store에서 다운로드" height="48">
+    <small>출시 예정</small>
+  </span>
+  
+  
+  
+  <span class="store-badge soon" aria-disabled="true">
+    <img src="../img/mac-app-store/ko.svg" alt="Mac App Store" height="48">
+    <small>출시 예정</small>
+  </span>
+  
+  
+  <span class="btn soon" aria-disabled="true">
+  
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3.500 5.500h17v10.500h-17zM1.500 19h21M12 8v5m0 0-2-2m2 2 2-2"/></svg>
+    <span>Mac용 다운로드<small>출시 예정</small></span>
+  </span>
+  
+  <span class="btn soon" aria-disabled="true">
+  
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.500 3.300v17.400c0 .6.700 1 1.200.7l14.600-8.700c.500-.3.500-1 0-1.300L5.700 2.600c-.5-.3-1.200.1-1.200.7Z"/></svg>
+    <span>Google Play<small>출시 예정</small></span>
+  </span>
+</div>
+</section>
+
+</div>
+
+<section class="wide video" id="video">
+  <h2>직접 확인하기</h2>
+  <p class="lead">세트리스트, 메모, 클릭을 소개하는 짧은 영상.</p>
+  
+  
+  <div class="player" id="player" data-embed="https://www.youtube-nocookie.com/embed/wrMZdcfcPZw">
+    <video controls playsinline preload="metadata" poster="../video/poster.jpg?v=50a9851279" width="1280" height="720">
+      <source src="../video/primissimo-overview-web-720p.mp4?v=c4b5a7f33b" type="video/mp4">
+    </video>
+  </div>
+  <p class="video-note"><a href="https://www.youtube.com/watch?v=wrMZdcfcPZw" rel="noopener">YouTube에서 보기</a> · <a id="video-local" href="../video/primissimo-overview-web-720p.mp4?v=c4b5a7f33b">이 사이트에서 보기</a></p>
+  
+</section>
+
+<section class="faq" id="faq">
+  <h2>질문</h2>
+  
+  <details open><summary>Primissimo는 정말 무료인가요?</summary><p>네. 광고, 계정, 구독, 시간 제한이 없고 앱 안에서 판매하는 것도 없습니다. 나중에 새로운 기능을 담은 유료 추가 기능이 나올 수 있습니다. 지금 무료인 것을 빼앗을 계획은 없습니다.</p></details>
+  
+  <details><summary>클릭이 더 정확한 이유는 무엇인가요?</summary><p>메트로놈 앱은 화면을 갱신하는 바로 그 타이머로 박을 셀 수도 있습니다. 기기가 다른 앱으로 바쁘면 이 타이머가 늦어져 클릭이 흔들립니다. Primissimo에서는 사용자 인터페이스를 거치지 않고 오디오 출력과 직접 작동하는 엔진이 모든 클릭을 오디오 스트림에 놓기 때문에, 기기가 바빠도 박이 제자리에서 밀리지 않습니다.</p></details>
+  
+  <details><summary>인터넷 없이도 작동하나요?</summary><p>네. 메모가 담긴 세트리스트, 메트로놈, 템포 감지는 이미 기기에 있는 모든 것과 함께 오프라인으로 작동합니다. 템포는 기기에서 직접 감지되며 소리는 개발자에게 전송되지 않습니다. 연결은 iCloud 동기화와 아직 이 기기에 없는 파일의 다운로드, 피드백 보내기, 선택 사항인 사용 통계에 필요합니다.</p></details>
+  
+  <details><summary>세트리스트는 어디에 저장되나요?</summary><p>직접 고른 폴더의 Markdown 파일에 저장됩니다. 예를 들어 iCloud Drive를 고르면 세트리스트가 내 기기 간에 동기화되고 앱을 삭제해도 남아 있습니다. 이 파일은 언제든 열고, 보내고, 다른 형식으로 변환할 수 있습니다. 세트리스트는 앱에서 편집하세요. 텍스트 편집기로 파일을 수정하는 방식은 지원되지 않으며, 그렇게 한 변경 사항은 동기화 과정에서 덮어쓰일 수 있습니다.</p></details>
+  
+  <details><summary>여러 기기에서 세트리스트를 작업할 수 있나요?</summary><p>네. 각 기기에서 설정 → 보관함 폴더 → 변경을 열고 iCloud Drive에서 같은 폴더를 선택하세요. Primissimo는 인터넷에 연결되지 않은 상태에서 한 편집까지 모든 기기의 편집 내용을 하나로 합치며, 어떤 편집도 조용히 사라지지 않습니다. 같은 항목을 두 기기에서 변경했다면 두 값이 모두 보존되고 곡에 ⇄ 표시가 나타나며, 어떤 값을 남길지 직접 고릅니다. 두 기기에서 편집한 메모는 줄 단위로 병합됩니다. 연주 중인 세트리스트는 연주하는 동안 바뀌지 않습니다. 다른 기기의 변경 사항은 적용을 탭할 때까지 기다립니다. 새 기기는 묻지 않고 폴더를 엽니다. Primissimo는 이 기기가 이미 다른 보관함에서 알고 있는 편집 내용이 폴더에 있을 때만 어떤 보관함인지 묻습니다. 다른 사람과 한 폴더에서 함께 작업하는 기능은 아직 지원되지 않습니다. Primissimo는 새로운 앱이고, 동기화는 그중 가장 새로운 부분입니다. 아직 의도대로 작동하지 않는 부분이 있을 수 있습니다. 세트리스트는 여전히 폴더 안의 평범한 파일로 남습니다. 너그럽게 이해해 주시고, 이상한 점이 있으면 앱 설정의 &#39;의견 보내기&#39;나 웹사이트를 통해 알려 주세요.</p></details>
+  
+  <details><summary>다른 기기의 변경 사항이 들어오지 않아요. 어떻게 해야 하나요?</summary><p>동기화는 iCloud Drive를 통해 이루어집니다. Primissimo는 시스템이 파일을 다운로드한 뒤에야 그 파일을 받을 수 있습니다. 파일 앱을 열고 iCloud Drive의 다른 파일이 다운로드되는지 확인하세요. 아무것도 다운로드되지 않는다면 iCloud 문제입니다. 인터넷 연결과 기기의 여유 공간을 확인하고, 기기를 재시동하거나 네트워크 설정을 재설정하세요(설정 → 일반 → 전송 또는 iPhone 재설정 → 재설정 → 네트워크 설정 재설정, iPad에서도 같습니다). 시스템 업데이트도 도움이 됩니다. Apple은 iOS 및 iPadOS 업데이트에서 iCloud Drive를 수정합니다. iCloud Drive를 &#39;다시 시작&#39;하려고 설정에서 끄지 마세요. 기기가 파일 사본을 제거하므로 폴더를 다시 선택해야 합니다. 편집 내용은 사라지지 않습니다. Primissimo가 보관해 두었다가 iCloud가 다시 작동하면 보냅니다.</p></details>
+  
+  <details><summary>연주하는 도중에 세트리스트가 바뀔 수 있나요?</summary><p>아니요. 세트리스트를 현재 세트리스트로 설정한 순간부터 다른 세트리스트를 선택할 때까지, 다른 기기에서 변경되더라도, 앱이나 기기를 다시 시작한 뒤에도 Primissimo는 세트리스트를 화면에 그대로 유지합니다. 템포, 곡 순서 등 직접 한 변경은 바로 적용됩니다. 다른 기기에서 온 변경 사항은 저장되고 작은 배지로 표시되며, “적용”을 탭할 때만 나타납니다. 연주 중인 곡이 도중에 바뀌는 일은 없으며, 이를 위해 에어플레인 모드를 켤 필요도 없습니다.</p></details>
+  
+  <details><summary>세트리스트나 곡을 복사하면 어떻게 되나요?</summary><p>세트리스트 메뉴의 “복제”는 곡과 곡의 메모, 템포, 박자표, 악센트, 박 분할을 비롯한 설정, 첨부 파일, 오디오 녹음까지 모두 복사합니다. 곡 하나만 세트리스트로 복사할 수도 있습니다. “다른 세트리스트의 곡” 버튼으로 모든 세트리스트에서 제목으로 곡을 찾을 수 있으며, 곡은 메모와 파일을 모두 가진 채 복사됩니다. 복사한 뒤에는 원본과 사본이 서로 독립적입니다. 메모, 템포, 박 분할을 비롯한 모든 것을 각각 따로 변경합니다.</p></details>
+  
+  <details><summary>첨부 파일이 포함된 세트리스트를 다른 사람에게 전달하려면 어떻게 하나요?</summary><p>보관함에서 세트리스트 메뉴를 열고 ‘.zip 내보내기(첨부 파일 포함)’를 선택하세요. 압축 파일에는 세트리스트와 각 곡에 첨부된 모든 파일(악보, 사진, 오디오)이 마커와 표시와 함께 들어갑니다. 원하는 방법으로 보내면, 받는 사람이 자신의 Primissimo 보관함에서 ‘세트리스트 가져오기&#39;를 탭하고 압축 파일을 선택합니다. 받는 사람에게는 독립된 사본이 생기며, 이후의 변경 사항은 서로 공유되지 않습니다.</p></details>
+  
+  <details><summary>Tempo에서 세트리스트를 옮길 수 있나요?</summary><p>네. .slist 파일을 열고 곡별 미리 보기를 확인한 뒤 가져오세요. BPM, 박자표, 강세, 리듬 패턴, 무음 박이 옮겨지며, 옮길 수 없는 것은 확인하기 전에 목록으로 보여 줍니다.</p></details>
+  
+  <details><summary>스프레드시트나 ChordPro 곡을 가져올 수 있나요?</summary><p>네. CSV로 저장한 스프레드시트에는 곡 제목 열이 있어야 합니다. BPM과 박자표 열도 읽어 들이며, 아티스트, 키, 길이, 메모는 곡 메모에 들어갑니다. ChordPro와 OnSong 파일에서는 템포, 박자표, 가사, 코드를 가져옵니다. 여러 곡 파일로 세트리스트 하나를 만들려면 가져오기 창에서 한꺼번에 선택하세요. 곡은 파일 이름 순서대로 놓입니다.</p></details>
+  
+  <details><summary>iPhone에서 오디오 녹음은 어떻게 삭제하나요?</summary><p>iPad와 Mac에서는 녹음마다 메뉴가 있는 ⋮ 버튼이 있습니다. iPhone에는 그 버튼을 둘 자리가 없으므로, 녹음을 왼쪽으로 쓸어넘긴 뒤 삭제를 확인하거나, 녹음을 길게 터치해 이름 변경, 이동, 삭제가 있는 같은 메뉴를 여세요.</p></details>
+  
+  <details><summary>앱은 어떤 데이터를 수집하나요?</summary><p>식별자가 없는 익명 사용 통계(설정에서 끌 수 있음)와 직접 보내기로 한 피드백뿐입니다. 계정도, 광고 추적도 없습니다.</p></details>
+  
+  <details><summary>Android 버전이 있나요?</summary><p>계획 중입니다. 준비되면 Google Play 버튼이 활성화됩니다.</p></details>
+  
+  <details><summary>Bluetooth 페달과 함께 쓸 수 있나요?</summary><p>키보드 단축키는 있지만 페달은 아직 테스트하지 않아 약속드리지 못합니다. 아래 양식으로 어떤 페달을 쓰시는지 알려 주세요.</p></details>
+  
+  <details><summary>Primissimo라는 이름은 무슨 뜻인가요?</summary><p>이탈리아어 단어로, “첫 번째”를 뜻하는 primo에 최상급 어미 -issimo가 붙어 “단연 첫 번째”라는 뜻이 됩니다. 저희는 Primissimo가 세트리스트를 짜는 뮤지션에게 바로 그런 존재, 즉 첫 번째 선택이 되기를 바랍니다.</p></details>
+  
+</section>
+
+<section class="feedback" id="feedback">
+  <h2>개발자에게 알려 주세요</h2>
+  <p class="lead">질문, 아이디어, 문제 — 모든 메시지를 코드를 쓰는 사람이 직접 읽습니다.</p>
+  <form id="form" novalidate>
+    <fieldset class="kinds">
+      <legend>주제</legend>
+      <label><input type="radio" name="kind" value="idea" checked><span>아이디어</span></label>
+      <label><input type="radio" name="kind" value="bug"><span>문제</span></label>
+      <label><input type="radio" name="kind" value="translation"><span>번역</span></label>
+      <label><input type="radio" name="kind" value="other"><span>질문</span></label>
+    </fieldset>
+    <label class="field"><span>메시지</span><textarea name="message" rows="6" maxlength="4000" required></textarea></label>
+    <label class="field"><span>답장받을 이메일 (선택)</span><input type="email" name="email" maxlength="200" autocomplete="email"></label>
+    <label class="trap" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    <div class="send">
+      <button type="submit">보내기</button>
+      <p class="status" id="status" role="status" data-sent="감사합니다. 메시지가 전달되었습니다." data-error="메시지를 보내지 못했습니다. 나중에 다시 시도해 주세요." data-short="조금 더 자세히 적어 주세요."></p>
+    </div>
+  </form>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-row">
+    <a href="/privacy/">개인정보 처리방침</a>
+    <a href="/terms/">이용 약관</a>
+    <a href="mailto:nestcaesar@gmail.com">연락처</a>
+  </div>
+  <p class="small">© 2026 Primissimo</p>
+  <p class="small">Tempo는 Frozen Ape Pte. Ltd.의, OnSong은 OnSong, LLC의 상표입니다. Primissimo는 이들 회사와 제휴하거나 승인을 받은 앱이 아닙니다.</p>
+  <p class="small tags" dir="ltr">#세트리스트 #드러머 #드럼 #리허설 #공연 #악보 #메트로놈 #bpm #클릭 #변박</p>
+</footer>
+
+<script src="../site.js?v=dd984700" defer></script>
+<script src="../visit.js?v=dd984700" data-page="home" data-endpoint="https://feedback.gnezdin.com/v1/visit" data-fallback="https://feedback.gnezdin.ru:8444/v1/visit" defer></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7cf600b63d94671afa2108161803745"}'></script>
+
+</body>
+</html>
