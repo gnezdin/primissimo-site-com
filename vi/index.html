@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="vi" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Primissimo — danh sách diễn, ghi chú bài hát và máy đếm nhịp chính xác</title>
+<meta name="description" content="Danh sách diễn và ghi chú bài hát trên một màn hình, cùng máy đếm nhịp với tiếng click vững như bàn thạch. Nhận diện BPM, nhập danh sách diễn từ Tempo, bảng tính và ChordPro, bản nhạc PDF và ảnh có chú thích. Miễn phí cho iPhone, iPad, Mac và Android.">
+
+<meta name="color-scheme" content="dark light">
+<meta property="og:title" content="Primissimo — danh sách diễn, ghi chú bài hát và máy đếm nhịp chính xác">
+<meta property="og:description" content="Danh sách diễn và ghi chú bài hát trên một màn hình, cùng máy đếm nhịp với tiếng click vững như bàn thạch. Nhận diện BPM, nhập danh sách diễn từ Tempo, bảng tính và ChordPro, bản nhạc PDF và ảnh có chú thích. Miễn phí cho iPhone, iPad, Mac và Android.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../og.jpg">
+<link rel="canonical" href="https://primissimo.gnezdin.com/vi/">
+<link rel="alternate" hreflang="en" href="https://primissimo.gnezdin.com/">
+<link rel="alternate" hreflang="en-gb" href="https://primissimo.gnezdin.com/en-gb/">
+<link rel="alternate" hreflang="en-au" href="https://primissimo.gnezdin.com/en-au/">
+<link rel="alternate" hreflang="en-ca" href="https://primissimo.gnezdin.com/en-ca/">
+<link rel="alternate" hreflang="ru" href="https://primissimo.gnezdin.com/ru/">
+<link rel="alternate" hreflang="uk" href="https://primissimo.gnezdin.com/uk/">
+<link rel="alternate" hreflang="de-de" href="https://primissimo.gnezdin.com/de/">
+<link rel="alternate" hreflang="fr-fr" href="https://primissimo.gnezdin.com/fr/">
+<link rel="alternate" hreflang="fr-ca" href="https://primissimo.gnezdin.com/fr-ca/">
+<link rel="alternate" hreflang="es-es" href="https://primissimo.gnezdin.com/es/">
+<link rel="alternate" hreflang="es-mx" href="https://primissimo.gnezdin.com/es-mx/">
+<link rel="alternate" hreflang="it" href="https://primissimo.gnezdin.com/it/">
+<link rel="alternate" hreflang="pt-br" href="https://primissimo.gnezdin.com/pt-br/">
+<link rel="alternate" hreflang="pt-pt" href="https://primissimo.gnezdin.com/pt/">
+<link rel="alternate" hreflang="nl-nl" href="https://primissimo.gnezdin.com/nl/">
+<link rel="alternate" hreflang="sv" href="https://primissimo.gnezdin.com/sv/">
+<link rel="alternate" hreflang="da" href="https://primissimo.gnezdin.com/da/">
+<link rel="alternate" hreflang="no" href="https://primissimo.gnezdin.com/no/">
+<link rel="alternate" hreflang="fi" href="https://primissimo.gnezdin.com/fi/">
+<link rel="alternate" hreflang="pl" href="https://primissimo.gnezdin.com/pl/">
+<link rel="alternate" hreflang="cs" href="https://primissimo.gnezdin.com/cs/">
+<link rel="alternate" hreflang="sk" href="https://primissimo.gnezdin.com/sk/">
+<link rel="alternate" hreflang="sl-si" href="https://primissimo.gnezdin.com/sl/">
+<link rel="alternate" hreflang="hu" href="https://primissimo.gnezdin.com/hu/">
+<link rel="alternate" hreflang="ro" href="https://primissimo.gnezdin.com/ro/">
+<link rel="alternate" hreflang="hr" href="https://primissimo.gnezdin.com/hr/">
+<link rel="alternate" hreflang="el" href="https://primissimo.gnezdin.com/el/">
+<link rel="alternate" hreflang="tr" href="https://primissimo.gnezdin.com/tr/">
+<link rel="alternate" hreflang="ca" href="https://primissimo.gnezdin.com/ca/">
+<link rel="alternate" hreflang="he" href="https://primissimo.gnezdin.com/he/">
+<link rel="alternate" hreflang="ar-sa" href="https://primissimo.gnezdin.com/ar/">
+<link rel="alternate" hreflang="hi" href="https://primissimo.gnezdin.com/hi/">
+<link rel="alternate" hreflang="id" href="https://primissimo.gnezdin.com/id/">
+<link rel="alternate" hreflang="ms" href="https://primissimo.gnezdin.com/ms/">
+<link rel="alternate" hreflang="vi" href="https://primissimo.gnezdin.com/vi/">
+<link rel="alternate" hreflang="th" href="https://primissimo.gnezdin.com/th/">
+<link rel="alternate" hreflang="ja" href="https://primissimo.gnezdin.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://primissimo.gnezdin.com/ko/">
+<link rel="alternate" hreflang="zh-hans" href="https://primissimo.gnezdin.com/zh-hans/">
+<link rel="alternate" hreflang="zh-hant" href="https://primissimo.gnezdin.com/zh-hant/">
+<link rel="alternate" hreflang="x-default" href="https://primissimo.gnezdin.com/">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../site.css?v=21e23fde">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  document.documentElement.dataset.theme = t;
+})();
+</script>
+</head>
+<body data-root="no" data-locales="en=/ en-gb=/en-gb/ en-au=/en-au/ en-ca=/en-ca/ ru=/ru/ uk=/uk/ de-de=/de/ fr-fr=/fr/ fr-ca=/fr-ca/ es-es=/es/ es-mx=/es-mx/ it=/it/ pt-br=/pt-br/ pt-pt=/pt/ nl-nl=/nl/ sv=/sv/ da=/da/ no=/no/ fi=/fi/ pl=/pl/ cs=/cs/ sk=/sk/ sl-si=/sl/ hu=/hu/ ro=/ro/ hr=/hr/ el=/el/ tr=/tr/ ca=/ca/ he=/he/ ar-sa=/ar/ hi=/hi/ id=/id/ ms=/ms/ vi=/vi/ th=/th/ ja=/ja/ ko=/ko/ zh-hans=/zh-hans/ zh-hant=/zh-hant/" data-endpoint="https://feedback.gnezdin.com/v1/feedback" data-endpoint-fallback="https://feedback.gnezdin.ru:8444/v1/feedback" data-lang="vi">
+<a class="skip" href="#main">↓</a>
+
+<header class="top">
+  <a class="brand" href="/vi/" aria-label="Primissimo">
+    <img src="../icon.png" width="28" height="28" alt="">
+    <span>Primissimo</span>
+  </a>
+  <nav class="nav" aria-label="Tính năng">
+    <a href="#features">Tính năng</a>
+    <a href="#faq">Câu hỏi</a>
+    <a href="#feedback">Phản hồi</a>
+  </nav>
+  <label class="lang"><span class="sr">Ngôn ngữ</span>
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+    <select id="lang"><option value="/">English</option><option value="/en-gb/">English (United Kingdom)</option><option value="/en-au/">English (Australia)</option><option value="/en-ca/">English (Canada)</option><option value="/ru/">русский</option><option value="/uk/">українська</option><option value="/de/">Deutsch</option><option value="/fr/">français</option><option value="/fr-ca/">français (Canada)</option><option value="/es/">español</option><option value="/es-mx/">español (México)</option><option value="/it/">italiano</option><option value="/pt-br/">português (Brasil)</option><option value="/pt/">português (Portugal)</option><option value="/nl/">Nederlands</option><option value="/sv/">svenska</option><option value="/da/">dansk</option><option value="/no/">norsk bokmål</option><option value="/fi/">suomi</option><option value="/pl/">polski</option><option value="/cs/">čeština</option><option value="/sk/">slovenčina</option><option value="/sl/">slovenščina</option><option value="/hu/">magyar</option><option value="/ro/">română</option><option value="/hr/">hrvatski</option><option value="/el/">Ελληνικά</option><option value="/tr/">Türkçe</option><option value="/ca/">català</option><option value="/he/">עברית</option><option value="/ar/">العربية</option><option value="/hi/">हिन्दी</option><option value="/id/">Indonesia</option><option value="/ms/">Melayu</option><option value="/vi/" selected>Tiếng Việt</option><option value="/th/">ไทย</option><option value="/ja/">日本語</option><option value="/ko/">한국어</option><option value="/zh-hans/">中文 (简体)</option><option value="/zh-hant/">中文 (繁體)</option></select>
+  </label>
+  <button class="theme" type="button" id="theme" aria-label="Chuyển giữa sáng và tối" title="Chuyển giữa sáng và tối">
+    <svg class="sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3 17 7M7 17l-1.7 1.7"/></g></svg>
+    <svg class="moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.2 14.6A8.4 8.4 0 0 1 9.4 3.8a.7.7 0 0 0-.9-.9 9.8 9.8 0 1 0 12.6 12.6.7.7 0 0 0-.9-.9Z"/></svg>
+  </button>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero-copy">
+    <h1>Từ nốt nhạc đầu tiên <mark>đến tiết mục encore.</mark></h1>
+    <p class="lead">Danh sách diễn của bạn, ghi chú cho từng bài và tiếng click vững như bàn thạch — ở cùng một chỗ, trong phòng tập lẫn trên sân khấu.</p>
+    <div class="downloads">
+  
+  
+  
+  <span class="store-badge soon" aria-disabled="true">
+    <img src="../img/app-store/vi.svg" alt="Tải trên App Store" height="48">
+    <small>Sắp ra mắt</small>
+  </span>
+  
+  
+  
+  <span class="store-badge soon" aria-disabled="true">
+    <img src="../img/mac-app-store/vi.svg" alt="Mac App Store" height="48">
+    <small>Sắp ra mắt</small>
+  </span>
+  
+  
+  <span class="btn soon" aria-disabled="true">
+  
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3.500 5.500h17v10.500h-17zM1.500 19h21M12 8v5m0 0-2-2m2 2 2-2"/></svg>
+    <span>Tải cho Mac<small>Sắp ra mắt</small></span>
+  </span>
+  
+  <span class="btn soon" aria-disabled="true">
+  
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.500 3.300v17.400c0 .6.700 1 1.200.7l14.600-8.700c.500-.3.500-1 0-1.300L5.700 2.600c-.5-.3-1.200.1-1.200.7Z"/></svg>
+    <span>Google Play<small>Sắp ra mắt</small></span>
+  </span>
+</div>
+    <p class="hero-note">Miễn phí · Không quảng cáo · Không tài khoản · iPhone, iPad, Mac và Android</p>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="glow"></div>
+    <div class="phone tilt"><div class="shot missing" data-shot="iphone/tracks"></div></div>
+    <div class="stand tilt back"><div class="shot"><img class="dark" src="../shots/en-US/ipad-land/gig-dark.d49161f4.webp" width="2388" height="1668" alt="" loading="eager" decoding="async"><img class="light" src="../shots/en-US/ipad-land/gig-light.615e4a9b.webp" width="2388" height="1668" alt="" loading="eager" decoding="async"></div></div>
+  </div>
+</section>
+
+<div class="pulse" aria-hidden="true">
+  <span class="group"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i></span><span class="group"><i style="--n:3"></i><i style="--n:4"></i></span><span class="group"><i style="--n:5"></i><i style="--n:6"></i></span>
+</div>
+
+<section class="promises">
+  <h2>Ba lời hứa</h2>
+  <div class="cards">
+    <article><h3>Tất cả trong tầm mắt</h3><p>Bài đang chơi, nhịp độ, bài tiếp theo và ghi chú của bạn luôn hiện rõ. Trên sân khấu, không có gì thừa làm bạn phân tâm.</p></article>
+    <article><h3>Sẵn sàng nhanh chóng</h3><p>Tìm nhịp độ bằng cách nghe, mang danh sách diễn từ Tempo, bảng tính hoặc ChordPro sang và giữ mọi thứ trong các tệp Markdown thuộc về bạn.</p></article>
+    <article><h3>Luôn đúng lúc</h3><p>Thời gian do một bộ máy âm thanh giữ, làm việc trực tiếp với đầu ra âm thanh và bỏ qua giao diện người dùng — thiết bị đang bận cũng không thể làm lệch một phách.</p></article>
+  </div>
+</section>
+
+<div id="features">
+
+<section class="feature">
+  <div class="copy">
+    <h2>Danh sách diễn cho mọi buổi diễn</h2>
+    <p>Bao nhiêu danh sách diễn tùy bạn — mỗi ban nhạc, mỗi buổi diễn một danh sách. Tìm bài theo tên, kéo để sắp xếp và đổi bài mà không phải dừng click: bài mới bắt đầu từ phách một. Nhịp độ và số chỉ nhịp được đổi ở một màn hình chỉnh sửa riêng, nên màn hình chính luôn gọn gàng.</p>
+  </div>
+  <div class="art pair">
+    <div class="phone"><div class="shot missing" data-shot="iphone/tracks"></div></div>
+    <div class="phone"><div class="shot missing" data-shot="iphone/library"></div></div>
+  </div>
+</section>
+
+<section class="wide">
+  <h2>Ghi chú đủ mọi kiểu — văn bản, ảnh, PDF, âm thanh</h2>
+  <p class="lead">Giữ cấu trúc bài, các hiệu lệnh và những đoạn khó ngay cạnh click: văn bản định dạng, bản nhạc PDF, ảnh chụp bản nhạc và âm thanh có dấu mốc đặt tên. Lặp một đoạn hoặc làm chậm lại để luyện. Ghi âm một ý tưởng bằng micrô. Chú thích lên bất kỳ PDF hay ảnh nào bằng bút, bút dạ và ký hiệu âm nhạc — tệp gốc giữ nguyên, và bạn có thể xuất một bản có chú thích dưới dạng PDF hoặc PNG.</p>
+  <div class="stand"><div class="shot"><img class="dark" src="../shots/en-US/ipad-land/notes-dark.2ef82d62.webp" width="2388" height="1668" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/ipad-land/notes-light.94d05c9d.webp" width="2388" height="1668" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="gallery">
+    <div class="phone"><div class="shot missing" data-shot="iphone/notes"></div></div>
+    <div class="phone"><div class="shot missing" data-shot="iphone/chart"></div></div>
+    <div class="phone"><div class="shot missing" data-shot="iphone/ink"></div></div>
+    <div class="phone"><div class="shot missing" data-shot="iphone/ink-photo"></div></div>
+  </div>
+</section>
+
+<section class="wide">
+  <h2>Một set trên mọi thiết bị</h2>
+  <p class="lead">Soạn danh sách diễn trên Mac, tập với iPad trên giá nhạc, diễn bằng iPad khi sân khấu còn chỗ cho nó — hoặc bằng iPhone khi không còn. Khi thư viện nằm trong iCloud Drive, mọi thiết bị Apple đều mở cùng các tệp. Trên Android, danh sách diễn nằm trên chính thiết bị: chuyển qua lại bằng cách xuất ZIP — tệp đính kèm và chú thích trên bản nhạc đi cùng. Đồng bộ là phần mới nhất của Primissimo — nếu thấy điều gì không ổn, hãy báo cho chúng tôi qua Gửi phản hồi trong Cài đặt.</p>
+  <div class="desk land">
+    
+    <div class="window"><span class="bar"><i></i><i></i><i></i></span><div class="shot missing" data-shot="mac/pdf"></div></div>
+    <div class="stand"><div class="shot"><img class="dark" src="../shots/en-US/ipad-land/pdf-dark.c75ff07f.webp" width="2388" height="1668" alt="" loading="lazy" decoding="async"><img class="light" src="../shots/en-US/ipad-land/pdf-light.10c80a19.webp" width="2388" height="1668" alt="" loading="lazy" decoding="async"></div></div>
+  </div>
+</section>
+
+<section class="feature flip">
+  <div class="copy">
+    <h2>Danh sách diễn của bạn. Tệp của bạn.</h2>
+    <p>Danh sách diễn là các tệp Markdown trong thư mục iCloud của ứng dụng hoặc trong bất kỳ thư mục nào bạn chọn, không phải những bản ghi bị khóa trong cơ sở dữ liệu. Bạn có thể mở chúng bằng bất kỳ trình soạn thảo văn bản nào, nhưng hãy sửa trong ứng dụng. Cùng các danh sách diễn đó có trên iPhone, iPad và Mac của bạn. Thay đổi từ mọi thiết bị của bạn được gộp lại, kể cả những thay đổi làm khi không có mạng; nếu hai thiết bị cùng sửa một chỗ, cả hai phiên bản đều được giữ và bạn chọn. Danh sách diễn đang mở không bao giờ thay đổi khi bạn chơi: thay đổi mới chờ bạn nhấn “Áp dụng”.</p>
+  </div>
+  <div class="art"><pre class="file" dir="ltr"><code>---
+schema: primissimo-setlist/2
+title: Friday Night — Blue Room
+---
+
+# Friday Night — Blue Room
+
+## Uneven Ground
+
+- **bpm:** 132
+- **meter:** 7/8
+- **grouping:** 3+2+2
+- **accents:** `&gt;..&gt;.&gt;.`
+
+Count it **3+2+2**. Ride on the groups.
+
+![Drum part](Friday Night/copper.pdf)
+</code></pre></div>
+</section>
+
+<section class="feature">
+  <div class="copy">
+    <h2>Nhập danh sách diễn từ Tempo, bảng tính và ChordPro</h2>
+    <p>Mở một danh sách diễn Tempo (.slist), một bảng tính (.csv, .tsv) hoặc các tệp bài hát ChordPro và OnSong (.cho, .chopro, .chordpro, .crd, .pro, .onsong), rồi xem lại từng bài trước khi nhập. Từ Tempo, BPM, số chỉ nhịp, trọng âm, mẫu nhịp điệu và phách tắt tiếng đều được chuyển sang; từ sách bài hát, lời và hợp âm được đưa vào ghi chú của bài. Những gì không chuyển được sẽ được liệt kê trước khi nhập, chứ không phải lúc đã lên sân khấu.</p>
+  </div>
+  <div class="art"><div class="phone"><div class="shot missing" data-shot="iphone/import"></div></div></div>
+</section>
+
+
+<section class="feature flip">
+  <div class="copy">
+    <h2>Click vững như bàn thạch</h2>
+    <p>Tiếng click đến từ một bộ máy âm thanh riêng, làm việc trực tiếp với đầu ra âm thanh của thiết bị và bỏ qua giao diện ứng dụng. Nó đặt từng phách đúng vào chỗ của mình trong luồng âm thanh, nên mở ghi chú, cuộn danh sách diễn hay đổi bài đều không bao giờ làm lệch một phách.</p>
+  </div>
+  <div class="art"><div class="phone"><div class="shot missing" data-shot="iphone/precise"></div></div></div>
+</section>
+
+
+
+
+<section class="feature">
+  <div class="copy">
+    <h2>Mọi số chỉ nhịp. Mọi mạch đập.</h2>
+    <p>Từ 10 đến 400 BPM. Từ 1 đến 16 phách mỗi ô nhịp trên 2, 4, 8 hoặc 16, với nhịp độ được đếm theo nốt trắng, nốt đen, nốt móc đơn hoặc nốt đen chấm dôi. Tách và gộp các nhóm phách — 3+2+2, 2+2+3 hay bất kỳ cách chia nào — và chỉ báo sẽ đi theo. Gán cho mỗi phách một trong năm mức, từ mạnh đến tắt tiếng. Chia nhỏ đến nốt móc kép và liên sáu, kể cả shuffle, sáu âm click và nhập nhịp độ bằng cách gõ (TAP) với biểu đồ các lần gõ của bạn.</p>
+  </div>
+  <div class="art"><div class="phone"><div class="shot missing" data-shot="iphone/edit"></div></div></div>
+</section>
+
+<section class="feature flip">
+  <div class="copy">
+    <h2>Để ứng dụng nghe. Nhận nhịp độ.</h2>
+    <p>Không biết BPM? Chọn một tệp âm thanh hoặc để Primissimo nghe qua micrô — một bản ghi âm hay ban nhạc ngay trong phòng. Một mạng nơ-ron theo dõi phách tìm ra nhịp độ ngay trên thiết bị của bạn, và âm thanh không bao giờ rời khỏi máy. Chia đôi hoặc nhân đôi kết quả bằng một chạm. Nếu bản nhạc không có mạch đập đều, ứng dụng sẽ báo rằng giá trị chỉ là ước tính.</p>
+  </div>
+  <div class="art"><div class="phone"><div class="shot missing" data-shot="iphone/detect"></div></div></div>
+</section>
+
+<section class="feature">
+  <div class="copy">
+    <h2>Sáng cho bàn làm việc. Tối cho sân khấu.</h2>
+    <p>Mỗi giao diện được thiết kế riêng, không chỉ đảo màu. Thử công tắc ở góc trang này — các ảnh màn hình sẽ đổi theo.</p>
+  </div>
+  <div class="art duo">
+    <div class="phone light-only"><div class="shot missing" data-shot="iphone/gig"></div></div>
+    <div class="phone dark-only"><div class="shot missing" data-shot="iphone/gig"></div></div>
+  </div>
+</section>
+
+<section class="wide">
+  <h2>Bằng ngôn ngữ của bạn</h2>
+  <p class="lead">40 ngôn ngữ giao diện, gồm cả chữ viết từ phải sang trái.</p>
+  <ul class="langs" dir="ltr"><li>azərbaycan</li><li>català</li><li>dansk</li><li>Deutsch</li><li>English</li><li>español</li><li>français</li><li>hrvatski</li><li>Indonesia</li><li>italiano</li><li>magyar</li><li>Melayu</li><li>Nederlands</li><li>norsk bokmål</li><li>polski</li><li>português</li><li>română</li><li>slovenčina</li><li>slovenščina</li><li>suomi</li><li>svenska</li><li>Tiếng Việt</li><li>Türkçe</li><li>čeština</li><li>Ελληνικά</li><li>беларуская</li><li>български</li><li>русский</li><li>српски</li><li>українська</li><li>қазақ тілі</li><li>հայերեն</li><li>עברית</li><li>العربية</li><li>हिन्दी</li><li>ไทย</li><li>ქართული</li><li>中文</li><li>日本語</li><li>한국어</li></ul>
+</section>
+
+<section class="wide free">
+  <h2>Mọi tính năng, miễn phí</h2>
+  <p class="lead">Không quảng cáo, không tài khoản, không thuê bao, không thời gian dùng thử — mọi thứ mô tả ở đây đều dùng được mà không phải trả tiền. Thống kê sử dụng ẩn danh không chứa mã định danh nào và có thể tắt trong Cài đặt.</p>
+  <ul class="ticks"><li>Giao diện sáng và tối</li><li>Chạy không cần internet</li><li>iPhone, iPad, Mac và Android</li><li>Phản hồi gửi từ ứng dụng đến thẳng nhà phát triển</li></ul>
+  <div class="downloads">
+  
+  
+  
+  <span class="store-badge soon" aria-disabled="true">
+    <img src="../img/app-store/vi.svg" alt="Tải trên App Store" height="48">
+    <small>Sắp ra mắt</small>
+  </span>
+  
+  
+  
+  <span class="store-badge soon" aria-disabled="true">
+    <img src="../img/mac-app-store/vi.svg" alt="Mac App Store" height="48">
+    <small>Sắp ra mắt</small>
+  </span>
+  
+  
+  <span class="btn soon" aria-disabled="true">
+  
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3.500 5.500h17v10.500h-17zM1.500 19h21M12 8v5m0 0-2-2m2 2 2-2"/></svg>
+    <span>Tải cho Mac<small>Sắp ra mắt</small></span>
+  </span>
+  
+  <span class="btn soon" aria-disabled="true">
+  
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.500 3.300v17.400c0 .6.700 1 1.200.7l14.600-8.700c.500-.3.500-1 0-1.300L5.700 2.600c-.5-.3-1.200.1-1.200.7Z"/></svg>
+    <span>Google Play<small>Sắp ra mắt</small></span>
+  </span>
+</div>
+</section>
+
+</div>
+
+<section class="wide video" id="video">
+  <h2>Xem thực tế</h2>
+  <p class="lead">Video ngắn về danh sách diễn, ghi chú và click.</p>
+  
+  
+  <div class="player" id="player" data-embed="https://www.youtube-nocookie.com/embed/wrMZdcfcPZw">
+    <video controls playsinline preload="metadata" poster="../video/poster.jpg?v=50a9851279" width="1280" height="720">
+      <source src="../video/primissimo-overview-web-720p.mp4?v=a165fbc4c7" type="video/mp4">
+    </video>
+  </div>
+  <p class="video-note"><a href="https://www.youtube.com/watch?v=wrMZdcfcPZw" rel="noopener">Xem trên YouTube</a> · <a id="video-local" href="../video/primissimo-overview-web-720p.mp4?v=a165fbc4c7">Xem trên trang này</a></p>
+  
+</section>
+
+<section class="faq" id="faq">
+  <h2>Câu hỏi</h2>
+  
+  <details open><summary>Primissimo có thật sự miễn phí?</summary><p>Đúng vậy. Không quảng cáo, không tài khoản, không thuê bao, không giới hạn thời gian, và không có gì được bán trong ứng dụng. Sau này có thể có phần bổ sung trả phí với tính năng mới. Chúng tôi không có ý định lấy lại bất cứ thứ gì đang miễn phí hôm nay.</p></details>
+  
+  <details><summary>Điều gì khiến click chính xác hơn?</summary><p>Một ứng dụng máy đếm nhịp có thể canh các phách bằng chính bộ hẹn giờ vẫn cập nhật màn hình. Khi thiết bị bận với các ứng dụng khác, bộ hẹn giờ đó có thể chậm và tiếng click bị vấp. Trong Primissimo, mỗi tiếng click được đặt vào luồng âm thanh bởi một bộ máy làm việc trực tiếp với đầu ra âm thanh và bỏ qua giao diện người dùng, nên thiết bị đang bận cũng không đẩy phách nào lệch khỏi nhịp.</p></details>
+  
+  <details><summary>Có dùng được khi không có mạng?</summary><p>Có. Danh sách diễn cùng ghi chú, máy đếm nhịp và việc nhận diện nhịp độ đều hoạt động không cần mạng với mọi thứ đã có trên thiết bị. Nhịp độ được nhận diện ngay trên thiết bị, và âm thanh không bao giờ được gửi cho nhà phát triển. Cần kết nối để đồng bộ qua iCloud và tải các tệp chưa có trên thiết bị này, để gửi phản hồi, cho thống kê sử dụng tùy chọn và để kiểm tra phiên bản mới.</p></details>
+  
+  <details><summary>Danh sách diễn của tôi được lưu ở đâu?</summary><p>Trong các tệp Markdown ở thư mục riêng của ứng dụng trong iCloud Drive — thư mục này hiện tên “Primissimo” trong ứng dụng Tệp và trong Finder. Nhờ vậy danh sách diễn được đồng bộ giữa các thiết bị của bạn và vẫn còn nếu bạn xóa ứng dụng. Khi không dùng iCloud, danh sách diễn được lưu trên thiết bị, và Primissimo sẽ đề nghị chuyển chúng lên iCloud ngay khi iCloud được bật. Bạn có thể chuyển thư viện sang thư mục khác trong Cài đặt → Thư mục thư viện → Đổi. Bạn có thể mở, gửi hoặc chuyển đổi các tệp này bất cứ lúc nào. Hãy sửa danh sách diễn trong ứng dụng: sửa tệp bằng trình soạn thảo văn bản không phải là cách làm việc được hỗ trợ, và những thay đổi như vậy có thể bị ghi đè khi đồng bộ.</p></details>
+  
+  <details><summary>Tôi có thể làm việc với danh sách diễn trên nhiều thiết bị không?</summary><p>Có. Hãy đăng nhập cùng một ID Apple và giữ iCloud Drive bật: mỗi thiết bị sẽ tự mở cùng một thư viện trong thư mục iCloud của ứng dụng, không hỏi gì ở lần mở đầu tiên, và hiện danh sách diễn bạn dùng trên sân khấu gần nhất. Nếu bạn đã chuyển thư viện sang thư mục khác, hãy chọn thư mục đó trên từng thiết bị trong Cài đặt → Thư mục thư viện → Đổi. Primissimo gộp các thay đổi từ mọi thiết bị của bạn, kể cả những thay đổi thực hiện khi không có kết nối internet, và không thay đổi nào bị mất âm thầm: nếu cùng một nội dung bị thay đổi trên hai thiết bị, cả hai giá trị đều được giữ, bài được đánh dấu ⇄ và bạn chọn giá trị nào ở lại. Ghi chú được sửa trên hai thiết bị sẽ được gộp theo từng dòng. Danh sách diễn bạn đang chơi không thay đổi trong lúc bạn chơi: thay đổi từ thiết bị khác sẽ chờ đến khi bạn chạm Áp dụng. Primissimo chỉ hỏi đây là thư viện nào khi một thư mục có những thay đổi mà thiết bị này đã biết từ một thư viện khác. Hiện chưa hỗ trợ làm việc chung với người khác trên cùng một thư viện. Primissimo là ứng dụng mới, và đồng bộ là phần non trẻ nhất của nó: một số thứ có thể chưa hoạt động đúng như mong muốn. Danh sách diễn của bạn vẫn là các tệp bình thường trong iCloud Drive. Mong bạn thông cảm và kể cho chúng tôi về bất cứ điều gì lạ — qua Gửi phản hồi trong Cài đặt của ứng dụng hoặc trên trang web.</p></details>
+  
+  <details><summary>Thay đổi từ thiết bị khác không đến. Tôi nên làm gì?</summary><p>Việc đồng bộ chạy qua iCloud Drive: Primissimo chỉ nhận được tệp sau khi hệ thống đã tải tệp đó về. Hãy mở ứng dụng Tệp và kiểm tra xem các tệp khác trong iCloud Drive có tải về được không. Nếu không tệp nào tải về, vấn đề nằm ở iCloud: hãy kiểm tra kết nối internet và dung lượng trống trên thiết bị, khởi động lại thiết bị hoặc đặt lại cài đặt mạng (Cài đặt → Cài đặt chung → Chuyển hoặc đặt lại iPhone → Đặt lại → Đặt lại cài đặt mạng; trên iPad cũng vậy). Cập nhật hệ thống cũng giúp ích: Apple sửa lỗi iCloud Drive trong các bản cập nhật iOS và iPadOS. Đừng tắt iCloud Drive trong Cài đặt để “khởi động lại” nó: thiết bị sẽ xóa bản sao tệp của mình và phải tải lại toàn bộ tệp. Các thay đổi của bạn không bị mất: Primissimo giữ chúng lại và gửi đi khi iCloud hoạt động trở lại.</p></details>
+  
+  <details><summary>Danh sách diễn có thể thay đổi khi tôi đang chơi không?</summary><p>Không. Từ lúc bạn đặt một danh sách diễn làm hiện tại cho đến khi chọn danh sách diễn khác, Primissimo giữ nguyên danh sách diễn đó trên màn hình đúng như trước, kể cả khi nó được thay đổi trên thiết bị khác và kể cả sau khi khởi động lại ứng dụng hoặc thiết bị. Những thay đổi của chính bạn — nhịp độ, thứ tự bài — được áp dụng ngay. Thay đổi từ các thiết bị khác được lưu lại và đánh dấu bằng một biểu tượng nhỏ; chúng chỉ hiện ra khi bạn chạm vào “Áp dụng”. Bài bạn đang chơi không bao giờ thay đổi giữa chừng, và bạn không cần bật Chế độ máy bay cho việc này.</p></details>
+  
+  <details><summary>Điều gì xảy ra khi tôi sao chép một danh sách diễn hoặc một bài hát?</summary><p>“Nhân bản” trong menu của danh sách diễn sao chép mọi thứ: các bài cùng ghi chú, nhịp độ, số chỉ nhịp, trọng âm, chia nhỏ phách và các thiết lập khác, tệp đính kèm và bản ghi âm. Một bài riêng lẻ cũng có thể được chép vào danh sách diễn: nút “Bài từ danh sách diễn khác” giúp bạn tìm bài theo tên trong mọi danh sách diễn của mình, và bài được chép sang cùng toàn bộ ghi chú và tệp. Sau khi sao chép, bản gốc và bản sao độc lập với nhau: ghi chú, nhịp độ, chia nhỏ phách và mọi thứ khác được thay đổi riêng ở từng bản.</p></details>
+  
+  <details><summary>Làm sao để đưa một danh sách diễn kèm tệp đính kèm cho người khác?</summary><p>Trong thư viện, mở menu của danh sách diễn và chọn “Xuất .zip (kèm tệp đính kèm)”. Tệp nén chứa danh sách diễn và mọi tệp đính kèm trong các bài của nó: bản nhạc, ảnh và âm thanh, cùng với các dấu mốc và chú thích. Gửi tệp theo cách bạn muốn: người nhận chạm “Nhập danh sách diễn” trong thư viện Primissimo của họ và chọn tệp nén. Họ có một bản sao độc lập; các thay đổi về sau không được chia sẻ giữa hai bên.</p></details>
+  
+  <details><summary>Tôi có thể chuyển danh sách diễn từ Tempo không?</summary><p>Có. Mở một tệp .slist, xem lại bản xem trước từng bài rồi nhập. BPM, số chỉ nhịp, trọng âm, mẫu nhịp điệu và phách tắt tiếng đều được chuyển sang, còn những gì không chuyển được sẽ được liệt kê trước khi bạn xác nhận.</p></details>
+  
+  <details><summary>Tôi có thể nhập bảng tính hoặc bài hát ChordPro không?</summary><p>Có. Bảng tính lưu dưới dạng CSV cần một cột tên bài hát; các cột BPM và số chỉ nhịp cũng được đọc, còn nghệ sĩ, giọng, thời lượng và ghi chú được đưa vào ghi chú của bài. Tệp ChordPro và OnSong mang theo nhịp độ, số chỉ nhịp, lời và hợp âm. Để tạo một danh sách diễn từ nhiều tệp bài hát, hãy chọn tất cả cùng lúc trong cửa sổ nhập: các bài sẽ theo thứ tự tên tệp.</p></details>
+  
+  <details><summary>Làm sao để xóa bản ghi âm trên iPhone?</summary><p>Trên màn hình rộng, như iPad hay Mac, bản ghi có nút ⋮ để mở menu. Trên iPhone không có chỗ cho nút này: hãy vuốt bản ghi sang trái rồi xác nhận xóa, hoặc chạm và giữ bản ghi để mở cùng menu đó với các mục đổi tên, di chuyển và xóa.</p></details>
+  
+  <details><summary>Ứng dụng thu thập dữ liệu gì?</summary><p>Thống kê sử dụng ẩn danh không có bất kỳ định danh nào — có thể tắt trong Cài đặt — và phản hồi mà bạn chọn gửi. Khi bật Phiên bản mới và tin tức, ứng dụng cũng kiểm tra trang web mỗi ngày một lần; trang web chỉ biết nền tảng, phiên bản ứng dụng và quốc gia. Không có tài khoản, không theo dõi quảng cáo.</p></details>
+  
+  <details><summary>Bản Android khác bản Apple ở đâu?</summary><p>Khác ở đồng bộ, còn lại như nhau. Danh sách diễn, ghi chú cho bài hát, tệp đính kèm, bản nhạc có chú thích, nhận diện nhịp độ, máy đếm nhịp và các kiểu nhập đều hoạt động như nhau. Khác biệt nằm ở nơi thư viện sống: trên thiết bị Apple, thư viện có thể nằm trong iCloud Drive và mở trên tất cả cùng lúc, còn trên Android nó ở lại chính thiết bị. Danh sách diễn đi giữa Android và iPhone bằng cách xuất ZIP; thư viện dùng chung cho Android sẽ có sau.</p></details>
+  
+  <details><summary>Làm sao chuyển danh sách diễn giữa Android và iPhone?</summary><p>Qua tệp lưu trữ. Trong thư viện, mở menu của danh sách diễn và chọn “Xuất .zip (kèm tệp đính kèm)”, gửi tệp bằng cách nào cũng được, rồi trên thiết bị kia nhấn “Nhập danh sách diễn”: Primissimo cho thấy bên trong có gì và đề nghị nhập vào. Tệp lưu trữ mang theo tệp đính kèm cùng chú thích trên đó, nên bản nhạc đến cùng những lời nhắc của bạn.</p></details>
+  
+  <details><summary>Có dùng được với pedal Bluetooth?</summary><p>Có phím tắt bàn phím, nhưng pedal chưa được thử nghiệm nên chúng tôi không hứa. Hãy cho biết bạn dùng pedal nào qua biểu mẫu bên dưới.</p></details>
+  
+  <details><summary>Tên Primissimo có nghĩa là gì?</summary><p>Đó là một từ tiếng Ý, ghép từ primo, “đầu tiên”, và hậu tố so sánh nhất -issimo: “đầu tiên nhất”. Đó chính là điều chúng tôi muốn Primissimo trở thành với những nhạc công soạn danh sách diễn: lựa chọn đầu tiên.</p></details>
+  
+</section>
+
+<section class="feedback" id="feedback">
+  <h2>Nhắn cho nhà phát triển</h2>
+  <p class="lead">Câu hỏi, ý tưởng, sự cố — mọi tin nhắn đều được người viết mã đọc.</p>
+  <form id="form" novalidate>
+    <fieldset class="kinds">
+      <legend>Chủ đề</legend>
+      <label><input type="radio" name="kind" value="idea" checked><span>Ý tưởng</span></label>
+      <label><input type="radio" name="kind" value="bug"><span>Sự cố</span></label>
+      <label><input type="radio" name="kind" value="translation"><span>Bản dịch</span></label>
+      <label><input type="radio" name="kind" value="other"><span>Câu hỏi</span></label>
+    </fieldset>
+    <label class="field"><span>Tin nhắn</span><textarea name="message" rows="6" maxlength="4000" required></textarea></label>
+    <label class="field"><span>Email để nhận trả lời (không bắt buộc)</span><input type="email" name="email" maxlength="200" autocomplete="email"></label>
+    <label class="trap" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    <div class="send">
+      <button type="submit">Gửi</button>
+      <p class="status" id="status" role="status" data-sent="Cảm ơn — tin nhắn của bạn đã đến." data-error="Không gửi được tin nhắn. Vui lòng thử lại sau." data-short="Vui lòng viết thêm một chút."></p>
+    </div>
+  </form>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-row">
+    <a href="/privacy/">Chính sách quyền riêng tư</a>
+    <a href="/terms/">Điều khoản sử dụng</a>
+    <a href="mailto:nestcaesar@gmail.com">Liên hệ</a>
+  </div>
+  <p class="small">© 2026 Primissimo</p>
+  <p class="small">Tempo là nhãn hiệu của Frozen Ape Pte. Ltd., OnSong là nhãn hiệu của OnSong, LLC. Primissimo không liên kết với và không được các công ty này chứng thực.</p>
+  <p class="small tags" dir="ltr">#setlist #taytrống #trống #buổitập #buổidiễn #bảnnhạc #máyđếmnhịp #bpm #click #nhịplẻ</p>
+</footer>
+
+<script src="../site.js?v=21e23fde" defer></script>
+<script src="../visit.js?v=21e23fde" data-page="home" data-endpoint="https://feedback.gnezdin.com/v1/visit" data-fallback="https://feedback.gnezdin.ru:8444/v1/visit" defer></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a7cf600b63d94671afa2108161803745"}'></script>
+
+</body>
+</html>
