@@ -1,0 +1,13 @@
+{
+ "schema": "primissimo-feed/1",
+ "channels": {
+  "mac-direct": {
+   "url": "https://github.com/gnezdin/primissimo-site/releases/latest/download/Primissimo.dmg",
+   "current": {
+    "version": "1.1.0",
+    "build": 23
+   }
+  }
+ },
+ "notices": []
+}

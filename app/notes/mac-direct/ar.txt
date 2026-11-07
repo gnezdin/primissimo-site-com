@@ -1,0 +1,2 @@
+## 1.1.0 (23)
+Search across your setlists and songs. Choose which side of the stage screen the play buttons sit on, and see the next song highlighted as the set moves on. A short guided tour on first launch, one “+” button for everything you add to a note, a recording level meter in decibels and louder recordings after Stop. Sheet music with your markings exports the same way on every device. Fixes and clearer translations.
