@@ -1,13 +1,15 @@
 {
- "schema": "primissimo-feed/1",
- "channels": {
-  "mac-direct": {
-   "url": "https://github.com/gnezdin/primissimo-site/releases/latest/download/Primissimo.dmg",
-   "current": {
-    "version": "1.1.0",
-    "build": 23
-   }
-  }
- },
- "notices": []
+  "schema": "primissimo-feed/1",
+  "channels": {
+    "mac-direct": {
+      "url": "https://github.com/gnezdin/primissimo-site/releases/latest/download/Primissimo.dmg",
+      "current": { "version": "1.1.0", "build": 23 }
+    },
+    "android": {
+      "url": "https://play.google.com/store/apps/details?id=com.gnezdin.primissimo",
+      "current": { "version": "1.1.1", "build": 26 },
+      "remind": { "up_to_build": 25, "show_from": "2026-11-10" }
+    }
+  },
+  "notices": []
 }
