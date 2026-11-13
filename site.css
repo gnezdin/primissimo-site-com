@@ -142,6 +142,8 @@ section { padding: 72px max(16px, calc((100% - var(--max)) / 2)); }
 .store-badge { display: inline-flex; align-items: center; transition: transform 0.15s; }
 .store-badge:hover { transform: translateY(-1px); }
 .store-badge img { display: block; height: 48px; width: auto; }
+a.store-badge[href], a.store-badge[href] img { cursor: pointer; }
+a.store-badge[href] img { -webkit-user-select: none; user-select: none; }
 .store-badge.soon { gap: 10px; cursor: default; }
 .store-badge.soon:hover { transform: none; }
 .store-badge.soon small { font-size: 0.72rem; font-weight: 500; color: var(--ink); opacity: 0.55; line-height: 1.1; }
