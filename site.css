@@ -107,25 +107,32 @@ main { display: block; }
 section { padding: 72px max(16px, calc((100% - var(--max)) / 2)); }
 
 /* Hero */
-.hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center; min-height: 82vh; padding-top: 48px; overflow: hidden; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 48px; align-items: center; min-height: 82vh; padding-top: 48px; overflow: hidden; }
+.hero-copy { min-width: 0; }
 .hero-copy .lead { margin-bottom: 1.8rem; }
 .hero-note { color: var(--ink-3); font-size: 0.95rem; margin-top: 1.2rem; }
-.hero-art { position: relative; display: grid; place-items: center; min-height: 560px; overflow: visible; }
+.hero-art { position: relative; display: grid; place-items: center; min-width: 0; min-height: 520px; overflow: visible;
+            /* Keep the copy-side gutter clear while retaining the tablet's right-hand bleed. */
+            clip-path: inset(-100px -100vw -100px 0); }
 .hero, main { overflow-x: clip; }
 .glow { position: absolute; inset: -10% -20%; background: radial-gradient(closest-side, var(--glow), transparent 70%); filter: blur(10px); }
 .phone { border-radius: 40px; box-shadow: var(--shadow); background: #05070a; padding: 8px; border: 1.5px solid #3a3f4a; width: 100%; }
 .phone .shot { border-radius: 32px; overflow: hidden; }
 .hero-art { perspective: 750px; }
-.hero-art .phone { width: 240px; position: relative; z-index: 2; }
-.hero-art .tilt { transform: rotate(-4deg) translate(-165px, 25px); }
+.hero-art .phone { width: 216px; position: relative; z-index: 2; }
+.hero-art .tilt { transform: rotate(-4deg) translate(-75px, 25px); }
 /* Планшет лежит, как на столе: наклонён от зрителя и повёрнут так, что правый угол
    опущен. Лёжа он занимает по высоте вдвое меньше, чем стоя, и не подпирает заголовок,
    а экран при этом не уменьшается — ноты и текст остаются читаемыми.
-   Размеры честные: при телефоне 240 точек планшету 11 дюймов нужно 720. */
-.hero-art .stand { width: 720px; position: absolute; z-index: 1; margin-top: 0;
+   Оба устройства уменьшены на 10%; пропорция планшета к телефону сохранена. */
+.hero-art .stand { width: min(648px, 125%); position: absolute; z-index: 1; margin-top: 0;
                    transform-style: preserve-3d; }
-.hero-art .stand.back { transform: translate(120px, 40px) rotateX(40deg) rotateZ(25deg);
+.hero-art .stand.back { transform: translate(180px, 40px) rotateX(40deg) rotateZ(25deg);
                         opacity: 0.97; box-shadow: 0 55px 75px -38px rgba(0, 0, 0, 0.52); }
+/* In RTL layouts the copy is on the right: keep that gutter clear instead. */
+:dir(rtl) .hero-art { clip-path: inset(-100px 0 -100px -100vw); }
+:dir(rtl) .hero-art .tilt { transform: rotate(4deg) translate(75px, 25px); }
+:dir(rtl) .hero-art .stand.back { transform: translate(-180px, 40px) rotateX(40deg) rotateZ(-25deg); }
 
 /* Кнопки загрузки */
 .downloads { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -276,6 +283,8 @@ form { display: grid; gap: 16px; margin-top: 1.4rem; }
   .hero-art .stand.back { transform: translate(40px, 30px) rotateX(40deg) rotateZ(25deg); }
   .hero-art .phone { width: 190px; }
   .hero-art .tilt { transform: rotate(-4deg) translate(-70px, 10px); }
+  :dir(rtl) .hero-art .tilt { transform: rotate(4deg) translate(70px, 10px); }
+  :dir(rtl) .hero-art .stand.back { transform: translate(-40px, 30px) rotateX(40deg) rotateZ(-25deg); }
   .hero { grid-template-columns: 1fr; min-height: 0; text-align: center; }
   .hero-copy .downloads { justify-content: center; }
   .hero-art { min-height: 520px; }
@@ -304,6 +313,8 @@ form { display: grid; gap: 16px; margin-top: 1.4rem; }
   .hero-art .tilt { transform: rotate(-4deg) translate(-60px, 10px); }
   .hero-art .stand { width: 420px; }
   .hero-art .stand.back { transform: translate(40px, 20px) rotateX(40deg) rotateZ(25deg); }
+  :dir(rtl) .hero-art .tilt { transform: rotate(4deg) translate(60px, 10px); }
+  :dir(rtl) .hero-art .stand.back { transform: translate(-40px, 20px) rotateX(40deg) rotateZ(-25deg); }
   /* Рамка планшета тоньше вслед за ним самим, иначе она толще экрана. */
   .stand { padding: 7px; border-radius: 15px; }
   .stand .shot { border-radius: 9px; }
